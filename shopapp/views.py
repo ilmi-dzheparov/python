@@ -4,6 +4,8 @@ from django.contrib.auth.models import Group
 from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render
 
+from shopapp.models import Product
+
 
 def shop_index(request: HttpRequest):
     products = [
@@ -24,3 +26,11 @@ def groups_list(request: HttpRequest):
         "groups": Group.objects.prefetch_related('permissions').all()
     }
     return render(request, "shopapp/groups-list.html", context=context)
+
+
+def products_list(request: HttpRequest):
+
+    context = {
+        "products": Product.objects.all()
+    }
+    return render(request, "shopapp/products-list.html", context=context)
