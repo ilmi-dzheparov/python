@@ -1,3 +1,19 @@
 from django.contrib import admin
 
-# Register your models here.
+from shopapp.models import Product
+
+
+@admin.register(Product)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = "pk", "name", "description_short", "price", "discount"
+    list_display_links = "pk", "name"
+    ordering = "pk", "name"
+    search_fields = "name", "description"
+
+    def description_short(self, obj: Product) -> str:
+        if len(obj.description) < 48:
+            return obj.description
+        return obj.description[:48] + '...'
+
+
+# admin.site.register(Product, ProductAdmin)
