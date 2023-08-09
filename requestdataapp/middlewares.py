@@ -20,13 +20,16 @@ class CountRequestsMiddleware:
         self.requests_count = 0
         self.responses_count = 0
         self.exceptions_count = 0
-        self.datetime_last_request = 0
-        self.datetime_now_request = 0
+        self.datetime_last_request = {}
+        self.datetime_now_request = {}
 
     def __call__(self, request: HttpRequest):
         if self.requests_count == 0:
-            self.datetime_last_request = datetime.now()
-            self.datetime_now_request = self.datetime_last_request
+            ip_address = request.META["REMOTE_ADDR"]
+            request.ip_address = ip_address
+            self.datetime_last_request[ip_address] = datetime.now()
+            self.datetime_now_request[ip_address] = datetime.now()
+
             self.requests_count += 1
             request.allowed = True
             response = self.get_response(request)
@@ -34,16 +37,17 @@ class CountRequestsMiddleware:
             print(self.requests_count, request.allowed)
             return response
 
-
+        ip_address = request.META["REMOTE_ADDR"]
+        request.ip_address = ip_address
         self.requests_count += 1
         print("requests count", self.requests_count)
-        self.datetime_now_request = datetime.now()
-        timeout = self.datetime_now_request.timestamp() - self.datetime_last_request.timestamp()
+        self.datetime_now_request[ip_address] = datetime.now()
+        timeout = self.datetime_now_request[ip_address].timestamp() - self.datetime_last_request[ip_address].timestamp()
         if timeout < 5:
             request.allowed = False
         else:
             request.allowed = True
-            self.datetime_last_request = datetime.now()
+            self.datetime_last_request[ip_address] = datetime.now()
         print(timeout, request.allowed)
         response = self.get_response(request)
         self.responses_count += 1
