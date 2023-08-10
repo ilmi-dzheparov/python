@@ -43,7 +43,7 @@ class CountRequestsMiddleware:
         print("requests count", self.requests_count)
         self.datetime_now_request[ip_address] = datetime.now()
         timeout = self.datetime_now_request[ip_address].timestamp() - self.datetime_last_request[ip_address].timestamp()
-        if timeout < 5:
+        if timeout < 1:
             request.allowed = False
         else:
             request.allowed = True
