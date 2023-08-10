@@ -19,4 +19,10 @@ Products list
     {% endfor %}
     </div>
 {% endif %}
+<br>
+<div>
+    <a href="{% url 'shopapp:product_create' %}"
+    >Create product</a>
+</div>
+<br>
 {% endblock %}
