@@ -4,7 +4,7 @@ from django.contrib.auth.models import Group
 from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render, redirect, reverse
 
-from shopapp.forms import ProductForm
+from shopapp.forms import ProductForm, OrderForm
 from shopapp.models import Product, Order
 
 
@@ -60,5 +60,34 @@ def create_product(request: HttpRequest):
         "form": form,
     }
     return render(request, "shopapp/create-product.html", context=context)
+
+def create_order(request: HttpRequest):
+
+    if request.method == "POST":
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            delivery_address = form.cleaned_data["delivery_address"]
+            promocode = form.cleaned_data["promocode"]
+            user = form.cleaned_data["user"]
+            products = form.cleaned_data['products']
+            obj = Order(
+                delivery_address = delivery_address,
+                promocode = promocode,
+                user = user,
+            )
+            obj.save()
+            for elem in products:
+                obj.products.add(elem)
+
+            url = reverse("shopapp:orders_list")
+            return redirect(url)
+    else:
+        print('ERROR')
+        form = OrderForm()
+    context = {
+        "form": form,
+    }
+    return render(request, "shopapp/create-order.html", context=context)
+
 
 

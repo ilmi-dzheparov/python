@@ -20,9 +20,8 @@ class Product(models.Model):
     #         return self.description
     #     return self.description[:48] + '...'
 
-
     def __str__(self)->str:
-        return f'Product(pk={self.pk}, name="{self.name}")'
+        return f'Product (pk={self.pk}, name="{self.name}")'
 
 
 class Order(models.Model):
