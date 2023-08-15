@@ -1,9 +1,16 @@
 from django import forms
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from django.core import validators
-from django.forms import Textarea
+from django.forms import Textarea, ModelForm
 
 from shopapp.models import Product, Order
+
+
+class GroupForm(ModelForm):
+    class Meta:
+        model = Group
+        fields = "name",
+
 
 
 class ProductForm(forms.ModelForm):

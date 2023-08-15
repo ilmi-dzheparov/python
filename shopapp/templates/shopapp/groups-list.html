@@ -6,6 +6,13 @@ Groups list
 
 {% block body %}
 <h1>Groups:</h1>
+<div>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Create</button>
+    </form>
+</div>
 {% if groups %}
     <ul>
         {% for group in groups %}

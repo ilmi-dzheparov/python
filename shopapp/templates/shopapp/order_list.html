@@ -6,12 +6,12 @@ Orders list
 
 {% block body %}
 <h1>Orders:</h1>
-{% if not orders %}
+{% if not object_list %}
 <h3>No orders yet</h3>
 {% else %}
     <div>
-        {% for order in orders %}
-            <p>Order id: {{order.id}}</p>
+        {% for order in object_list %}
+            <p><a href="{% url 'shopapp:order_detail' pk=order.pk %}">Order id: {{order.pk}}</a></p>
             <p>Order by {% firstof order.user.first_name order.user.username%}</p>
             <p>Promocode: <code>{{order.promocode}}</code></p>
             <p>Delivery address: {{order.delivery_address}}</p>
