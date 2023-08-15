@@ -125,33 +125,83 @@ class ProductDeleteView(DeleteView):
         self.object.save()
         return HttpResponseRedirect(success_url)
 
-def create_order(request: HttpRequest):
 
-    if request.method == "POST":
-        form = OrderForm(request.POST)
-        if form.is_valid():
-            delivery_address = form.cleaned_data["delivery_address"]
-            promocode = form.cleaned_data["promocode"]
-            user = form.cleaned_data["user"]
-            products = form.cleaned_data['products']
-            obj = Order(
-                delivery_address = delivery_address,
-                promocode = promocode,
-                user = user,
-            )
-            obj.save()
-            for elem in products:
-                obj.products.add(elem)
+class OrderCreateView(CreateView):
+    model = Order
+    # fields = "delivery_address", "promocode", "user", "products"
+    success_url = reverse_lazy("shopapp:orders_list")
+    form_class = OrderForm
 
-            url = reverse("shopapp:orders_list")
-            return redirect(url)
-    else:
-        print('ERROR')
-        form = OrderForm()
-    context = {
-        "form": form,
-    }
-    return render(request, "shopapp/create-order.html", context=context)
+    def form_valid(self, form):
+        form.save()
+        products = form.cleaned_data["products"]
+        for product in products:
+            form.instance.products.add(product)
+        return super().form_valid(form)
+
+
+class OrderUpdateView(UpdateView):
+    model = Order
+    success_url = reverse_lazy("shopapp:orders_list")
+    form_class = OrderForm
+    template_name_suffix = "_update_form"
+
+    def form_valid(self, form):
+        form.save()
+        products = form.cleaned_data["products"]
+        for product in products:
+            form.instance.products.add(product)
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse(
+            "shopapp:order_detail",
+            kwargs={"pk": self.object.pk},
+        )
+
+
+class OrderDeleteView(DeleteView):
+    model = Order
+    success_url = reverse_lazy("shopapp:orders_list")
+    # def form_valid(self, form):
+    #     success_url = self.get_success_url()
+    #     self.object.archived = True
+    #     self.object.save()
+    #     return HttpResponseRedirect(success_url)
+
+
+
+
+
+
+
+# def create_order(request: HttpRequest):
+#
+#     if request.method == "POST":
+#         form = OrderForm(request.POST)
+#         if form.is_valid():
+#             delivery_address = form.cleaned_data["delivery_address"]
+#             promocode = form.cleaned_data["promocode"]
+#             user = form.cleaned_data["user"]
+#             products = form.cleaned_data['products']
+#             obj = Order(
+#                 delivery_address = delivery_address,
+#                 promocode = promocode,
+#                 user = user,
+#             )
+#             obj.save()
+#             for elem in products:
+#                 obj.products.add(elem)
+#
+#             url = reverse("shopapp:orders_list")
+#             return redirect(url)
+#     else:
+#         print('ERROR')
+#         form = OrderForm()
+#     context = {
+#         "form": form,
+#     }
+#     return render(request, "shopapp/order_form.html", context=context)
 
 
 

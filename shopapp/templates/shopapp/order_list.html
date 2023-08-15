@@ -13,8 +13,8 @@ Orders list
         {% for order in object_list %}
             <p><a href="{% url 'shopapp:order_detail' pk=order.pk %}">Order id: {{order.pk}}</a></p>
             <p>Order by {% firstof order.user.first_name order.user.username%}</p>
-            <p>Promocode: <code>{{order.promocode}}</code></p>
-            <p>Delivery address: {{order.delivery_address}}</p>
+<!--            <p>Promocode: <code>{{order.promocode}}</code></p>-->
+<!--            <p>Delivery address: {{order.delivery_address}}</p>-->
             <p>Products in order:</p>
             <ul>
                 {% for product in order.products.all %}

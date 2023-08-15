@@ -18,6 +18,11 @@ Order # {{object.pk}} details
   </ul>
 </div>
 <br>
-<a href="{% url 'shopapp:orders_list' %}">Back to orders list</a>
+<p><a href="{% url 'shopapp:order_update' pk=object.pk %}">Update order</a></p>
+
+<p><a href="{% url 'shopapp:order_delete' pk=object.pk %}">Delete order</a></p>
+
+<p><a href="{% url 'shopapp:orders_list' %}">Back to orders list</a></p>
+<br>
 
 {% endblock %}
