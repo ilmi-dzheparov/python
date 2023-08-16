@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Размеры и отступы</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                var container = document.querySelector('.popup-container');
+                var popupButtons = document.querySelectorAll('.open-popup');
+                for (let i = 0; i < popupButtons.length; i++) {
+                    popupButtons[i].addEventListener('click', 
+                    function(){container.style.display = 'flex';});
+                }
+                container.addEventListener('click', function(event){
+                    if(event.target == container) {container.style.display = 'none';}
+                });
+            });
+        </script>
+        <style>
+            * {
+                font-family: 'Roboto', sans-serif;
+            }            
+            html, body {
+                margin: 0;
+                padding: 0;
+                background-color: #f6f7f9 ;
+            }
+            header {
+                height: 100px;
+                padding: 0 40px;
+            }
+            header > div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            header > div > div > span {
+                margin-right: 15px;
+            }
+            h1 {
+                font-size: 300%;
+            }
+            h2 {
+                font-size: 200%;
+                margin-bottom: 50px;
+            }
+            section {
+                padding: 40px;
+            }
+            footer {
+                padding: 40px;
+            }
+            .first-block {
+                height: 450px;
+            }
+            .first-block > div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                background-image: url("img/images/man.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right center;
+            }
+            .fixed-container > h1 {
+                margin: 5px;                         
+            }
+            .fixed-container > p {
+                margin: 5px 0 30px;
+
+            }
+            .fixed-container {
+                max-width: 1000px;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .fixed-container > div > a {
+                margin-right: 15px;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+                cursor: pointer;
+                color: green;
+            }
+            .services {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 40px;
+            }
+            .services > div {
+                width: 200px;
+            }
+            .services img {
+                height: 150px;
+            }
+            .examples {
+                display: flex;
+                justify-content: space-between;                
+            }
+            .examples > div {
+                width: 300px;
+            }
+            .examples img {
+                height: 200px;
+                border: 1px solid black;
+                border-radius: 20px;
+            }
+            .examples > div {
+                margin-bottom: 40px;
+            }
+            .price-info {
+                background-color: blue;
+                color: white;
+            }
+            .price-info > div > h2, h5 {
+                width: 50%;
+            }    
+            .light-button {
+                background-color: transparent;
+                border: 2px solid black;
+            }
+            .dark-button {
+                background-color: blue;
+                border: 2px solid blue;                
+                color: white;
+            }
+            button {
+                border-radius: 5px;
+                padding: 10px 30px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: yellow;
+                color: red;
+            }
+            .links-foot {
+                display: flex;
+                flex-direction: column;
+            }
+            .links-foot > a {
+                margin-bottom: 10px;
+            }
+            footer > div {
+                display: flex;   
+                justify-content: space-between;             
+            }
+            footer > div > button{
+                height: fit-content;            
+            }
+            .social-nets img {
+                height: 20px;
+            }
+            .contacts {
+                display: flex;
+                flex-direction: column;
+            }
+            .contacts > button {
+                margin-bottom: 15px;
+            }
+            .contacts > div {
+                display: flex;
+                justify-content: space-between;
+            }
+            .popup-container {
+                background-color: rgba(0, 0, 0, 0.63);
+                position: fixed;
+                width: 100%;  
+                height: 100%;
+                display: none;
+                justify-content: center;
+                align-items: center;
+            }
+            .popup {
+                background-color: white;
+                width: 400px;
+                height: 300px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .popup__input {
+                width: 70%;
+                margin-bottom: 15px;
+            }            
+        </style>
+    </head>
+<body>
+    <div class="popup-container">
+        <form class="popup">
+            <input type="text" placeholder="Введите ваше имя" class="popup__input">
+            <input type="email" placeholder="Введите ваш e-mail" class="popup__input">
+            <button class="light-button">Отправить</button>
+        </form>
+    </div>
+    <header>
+        <div class="fixed-container">
+            <div>
+                <a href="#">Услуги</a>
+                <a href="#">Портфолио</a>
+                <a href="#">Стоимость</a>
+            </div>
+            <div>
+                <span>+7 909 999 55 44</span>
+                <button class="light-button open-popup">Заказать звонок</button>
+            </div>
+            
+        </div>
+        
+    </header>
+    <section class="first-block">
+        <div class="fixed-container">
+            <h1>Дмитрий Алексеев</h1>
+            <p>Frontend разработчик и веб-верстальщик</p>
+            <button class="dark-button open-popup">Узнать больше</button>
+        </div>
+    </section>
+    <section>
+        <div class="fixed-container">
+            <h2>Что я делаю</h2>
+            <div class="services">
+                <div>
+                    <img src="img/icons/1.png" alt="">
+                    Верстка лэндинг-страниц и сайтов любой сложности
+                </div>
+                <div>
+                    <img src="img/icons/2.png" alt="">
+                    Адаптивная вёрстка под все браузеры и устройства
+                </div>
+                <div>
+                    <img src="img/icons/3.png" alt="">
+                    Frontend разработчка и программирование
+                </div>
+                <div>
+                    <img src="img/icons/4.png" alt="">
+                    Исправление и доработка существующей верстки
+                </div>
+            </div>
+            <button class="light-button open-popup">Узнать стоимость</button>
+        </div>          
+    </section>
+    <section>
+        <div class="fixed-container">
+            <h2>Примеры работ</h2>
+            <div class="examples">
+                <div>
+                    <img src="img/examples/e1.png" alt="">
+                    Сайт психолога Веры Антоновой
+                </div>
+                <div>
+                    <img src="img/examples/e2.png" alt="">
+                    Сайт магазина детской одежды
+                </div>
+                <div>
+                    <img src="img/examples/e3.png" alt="">
+                    Сайт магазина "Рыболов"
+                </div>
+            </div>
+            <button class="light-button open-popup">Заказать проект</button>
+        </div>        
+    </section>
+    <section class="price-info">
+        <div class="fixed-container">
+            <h2>Адаптивная вёрстка под все устройства и браузеры <br>от 1000 р. всего за 4 часа.* </h2>
+            <h5>*Срок и стоимость могут отличаться от заявленных и расчитыватся индивидуально, в зависимости от слодности задач</h5>
+        </div>        
+    </section>
+    <footer>
+        <div class="fixed-container">
+            <div class="links-foot">
+                <a href="#">Услуги</a>
+                <a href="#">Портфолио</a>
+                <a href="#">Стоимость</a>    
+            </div>
+            <div>
+                <p>dmitry@alekseev.ru</p>
+                <p>+7 (499) 995 77 55</p>  
+            </div>
+            <div class="contacts">
+                <button class="light-button open-popup">Заказать звонок</button>
+                <div class="social-nets">
+                    <a href="#" target="_blank"><img src="img/social-nets/fb.png" alt="FB"></a>
+                    <a href="#" target="_blank"><img src="img/social-nets/vk.png" alt="VK"></a>
+                    <a href="#" target="_blank"><img src="img/social-nets/you.png" alt="YouTube"></a>
+                    <a href="#" target="_blank"><img src="img/social-nets/telegram.png" alt="TG"></a>
+                    <a href="#" target="_blank"><img src="img/social-nets/inst.png" alt="Instagram"></a>
+                </div>
+            </div>                
+        </div>        
+    </footer>
+</body>
+</html>
