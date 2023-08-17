@@ -117,7 +117,6 @@ class ProductCreateView(PermissionRequiredMixin, CreateView):
 class ProductUpdateView(UserPassesTestMixin, UpdateView):
     def test_func(self):
         # return  self.request.user.groups.filter(name="secret-group").exists
-        print(self.get_object().created_at)
         return (self.request.user.is_superuser or
                 (self.request.user.has_perm("shopapp.add_product") and
                  self.get_object().created_by == self.request.user)
