@@ -8,6 +8,8 @@ from .views import (
     set_session_view,
     logout_view,
     MyLogoutView,
+    AboutMeView,
+    RegisterView,
 )
 
 
@@ -21,7 +23,9 @@ urlpatterns = [
         ),
         name="login"
     ),
+    path("register/", RegisterView.as_view(), name="register"),
     path("logout/", MyLogoutView.as_view(), name="logout"),
+    path("about-me/", AboutMeView.as_view(), name="about-me"),
     path("cookie/get/", get_cookie_view, name="cookie-get"),
     path("cookie/set/", set_cookie_view, name="cookie-set"),
     path("session/get/", get_session_view, name="sessiom-get"),

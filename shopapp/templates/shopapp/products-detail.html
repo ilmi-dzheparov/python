@@ -12,6 +12,8 @@ Product # {{product.pk}}
     <br>
     <div>Discount: {{product.discount}}</div>
     <br>
+    <div>Created by {% firstof product.created_by.first_name product.created_by.username %}</div>
+    <br>
     <div>Archived: {{product.archived}}</div>
     <br>
 </div>

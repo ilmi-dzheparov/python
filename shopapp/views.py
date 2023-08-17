@@ -1,4 +1,6 @@
 from timeit import default_timer
+
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import Group
 
 from django.http import HttpResponse, HttpRequest, HttpResponseRedirect
@@ -66,7 +68,7 @@ class ProductsListView(ListView):
     #     context["products"] = Product.objects.all()
     #     return context
 
-class OrdersListView(ListView):
+class OrdersListView(LoginRequiredMixin, ListView):
     queryset = (Order.objects
                 .select_related("user")
                 .prefetch_related("products")
@@ -78,17 +80,24 @@ class OrdersListView(ListView):
 #     }
 #     return render(request, "shopapp/order_list.html", context=context)
 
-class OrderDetailView(DetailView):
+class OrderDetailView(PermissionRequiredMixin, DetailView):
+    permission_required = ["shopapp.view_order"]
     queryset = (Order.objects
                 .select_related("user")
                 .prefetch_related("products")
                 )
 
 
-class ProductCreateView(CreateView):
+class ProductCreateView(PermissionRequiredMixin, CreateView):
+    permission_required = ["shopapp.add_product",]
     model = Product
-    fields = "name", "price", "description", "discount"
+    # fields = "name", "price", "description", "discount
+    form_class = ProductForm
     success_url = reverse_lazy("shopapp:products_list")
+    def form_valid(self, form):
+        form.instance.created_by = self.request.user
+        form.save()
+        return super().form_valid(form)
 # def create_product(request: HttpRequest):
 #     if request.method == "POST":
 #         form = ProductForm(request.POST)
@@ -105,7 +114,15 @@ class ProductCreateView(CreateView):
 #     }
 #     return render(request, "shopapp/product_form.html", context=context)
 
-class ProductUpdateView(UpdateView):
+class ProductUpdateView(UserPassesTestMixin, UpdateView):
+    def test_func(self):
+        # return  self.request.user.groups.filter(name="secret-group").exists
+        print(self.get_object().created_at)
+        return (self.request.user.is_superuser or
+                (self.request.user.has_perm("shopapp.add_product") and
+                 self.get_object().created_by == self.request.user)
+                )
+
     model = Product
     fields = "name", "price", "description", "discount"
     template_name_suffix = "_update_form"

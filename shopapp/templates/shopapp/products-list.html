@@ -19,10 +19,12 @@ Products list
     {% endfor %}
     </div>
 {% endif %}
-<br>
-<div>
-    <a href="{% url 'shopapp:product_create' %}"
-    >Create product</a>
-</div>
+{% if perms.shopapp.add_product %}
+    <br>
+    <div>
+        <a href="{% url 'shopapp:product_create' %}"
+        >Create product</a>
+    </div>
+{% endif %}
 <br>
 {% endblock %}
