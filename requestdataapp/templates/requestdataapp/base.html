@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>
-    {% block title%}
+    <meta charset="UTF-8">
+    <title>
+        {% block title%}
 
-    {% endblock %}
-  </title>
+        {% endblock %}
+    </title>
 </head>
 <body>
 {% if request.allowed %}
 
-  {% block body %}
+{% block body %}
 
-  {% endblock %}
+{% endblock %}
 
 {% else %}
 
@@ -21,9 +21,9 @@
 
 {% endif %}
 
-  <br>
-  <div>
+<br>
+<div>
     HTTP User-Agent: {{ request.user_agent}}
-  </div>
+</div>
 </body>
 </html>

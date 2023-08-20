@@ -5,6 +5,7 @@ from django.http import HttpRequest, HttpResponse
 
 def set_useragent_on_request_middleware(get_response):
     print('Initial call')
+
     def middleware(request: HttpRequest):
         print("before get response")
         if 'HTTP_USER_AGENT' in request.META:
@@ -13,7 +14,9 @@ def set_useragent_on_request_middleware(get_response):
         # print(request.datetime.now)
         print("after get response")
         return response
+
     return middleware
+
 
 class CountRequestsMiddleware:
     def __init__(self, get_response):
@@ -58,4 +61,3 @@ class CountRequestsMiddleware:
     def process_exception(self, request: HttpRequest, exception: Exception):
         self.exceptions_count += 1
         print("got", self.exceptions_count, "exceptions so far")
-

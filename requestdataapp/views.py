@@ -1,5 +1,3 @@
-
-
 from django.core.files.storage import FileSystemStorage, Storage
 from django.core.files.uploadedfile import UploadedFile
 from django.http import HttpRequest, HttpResponse
