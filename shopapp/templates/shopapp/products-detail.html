@@ -1,4 +1,14 @@
 {% extends 'shopapp/base.html' %}
+
+{% block style %}
+    .preview img {
+        width: 250px;
+    }
+    .images {
+        width: 400px;
+    }
+{% endblock %}
+
 {% block title %}
 Product # {{product.pk}}
 {% endblock %}
@@ -9,6 +19,24 @@ Product # {{product.pk}}
     <div>Description: <em>{{product.description}}</em></div>
     <br>
     <div>Price: {{product.price}}</div>
+    <br>
+    <div class="preview">
+        {% if product.preview %}
+        <p>Preview:</p>
+        <img src="{{product.preview.url}}" alt="{{product.preview.name}}">
+        {% endif %}
+    </div>
+    <h3>Images:</h3>
+    <div>
+        {% for img in product.images.all %}
+            <div>
+                <img class="images" src="{{img.image.url}}" alt="{{img.image.name}}">
+                <div>{{img.description}}</div>
+            </div>
+        {% empty %}
+            <p>No images uploaded yet</p>
+        {% endfor %}
+    </div>
     <br>
     <div>Discount: {{product.discount}}</div>
     <br>

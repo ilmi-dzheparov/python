@@ -1,6 +1,14 @@
 from django.contrib.auth.models import User
 from django.db import models
 
+
+def product_preview_directory_path(instance: "Product", filename: str) -> str:
+    return "products/product_{id}/preview/{filename}".format(
+        id=instance.pk,
+        filename=filename,
+    )
+
+
 class Product(models.Model):
     class Meta:
         ordering = ["name", "price"]
@@ -11,6 +19,7 @@ class Product(models.Model):
     description = models.TextField(null=False, blank=True)
     price = models.DecimalField(default=0, max_digits=8, decimal_places=2)
     discount = models.PositiveSmallIntegerField(default=0)
+    preview = models.FileField(null=True, blank=True, upload_to=product_preview_directory_path)
     created_at = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(User, on_delete=models.PROTECT)
     archived = models.BooleanField(default=False)
@@ -31,3 +40,19 @@ class Order(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.PROTECT)
     products = models.ManyToManyField(Product, related_name="orders")
+    receipt = models.FileField(null=True, upload_to="orders/receipts/")
+
+
+def product_images_directory_path(instance: "ProductImage", filename: str) -> str:
+    return "products/product_{id}/images/{filename}".format(
+        id=instance.product.pk,
+        filename=filename,
+    )
+
+
+class ProductImage(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="images")
+    image = models.ImageField(upload_to=product_images_directory_path)
+    description = models.CharField(max_length=200, null=False, blank=True)
+
+

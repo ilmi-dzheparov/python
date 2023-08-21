@@ -12,7 +12,7 @@ from django.views import View
 from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from shopapp.forms import ProductForm, OrderForm, GroupForm
-from shopapp.models import Product, Order
+from shopapp.models import Product, Order, ProductImage
 
 
 class ShopIndexView(View):
@@ -46,7 +46,8 @@ class GroupsListView(View):
 
 class ProductDetailView(DetailView):
     template_name = "shopapp/products-detail.html"
-    model = Product
+    # model = Product
+    queryset = Product.objects.prefetch_related("images")
     context_object_name = "product"
 
 
@@ -126,13 +127,22 @@ class ProductUpdateView(UserPassesTestMixin, UpdateView):
                 )
 
     model = Product
-    fields = "name", "price", "description", "discount"
+    # fields = "name", "price", "description", "discount", "preview"
+    form_class = ProductForm
     template_name_suffix = "_update_form"
     def get_success_url(self):
         return reverse(
             "shopapp:products_detail",
             kwargs={"pk": self.object.pk},
         )
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        for image in form.files.getlist("images"):
+            ProductImage.objects.create(
+                product=self.object,
+                image=image
+            )
+        return response
 
 
 class ProductDeleteView(DeleteView):
