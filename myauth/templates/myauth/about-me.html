@@ -1,5 +1,11 @@
 {% extends 'myauth/base.html' %}
 
+{% block style %}
+    .avatar {
+        width: 150px;
+    }
+{% endblock %}
+
 {% block title %}
     About me
 {% endblock %}
@@ -8,6 +14,13 @@
 <h1>User info</h1>
 {% if user.is_authenticated %}
     <h2>Detail</h2>
+    <div>
+       {% if user.avatar %}
+            <img class="avatar" src="{{user.avatar.url}}" alt="{{user.avatar.name}}">
+        {% else %}
+            Avatar has not uploaded yet
+        {% endif %}
+    </div>
     <p>Username: {{user.username}}</p>
     <p>First name: {{user.first_name}}</p>
     <p>Second name: {{user.last_name}}</p>
