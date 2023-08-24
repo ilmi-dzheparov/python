@@ -11,6 +11,8 @@ from .views import (
     AboutMeView,
     RegisterView,
     FooBarView,
+    AccountslistView,
+    AccountDetailView,
 )
 
 
@@ -27,9 +29,11 @@ urlpatterns = [
     path("register/", RegisterView.as_view(), name="register"),
     path("logout/", MyLogoutView.as_view(), name="logout"),
     path("about-me/", AboutMeView.as_view(), name="about-me"),
+    path("", AccountslistView.as_view(), name="accounts"),
+    path("<int:pk>/", AccountDetailView.as_view(), name="user_details"),
     path("cookie/get/", get_cookie_view, name="cookie-get"),
     path("cookie/set/", set_cookie_view, name="cookie-set"),
-    path("session/get/", get_session_view, name="sessiom-get"),
+    path("session/get/", get_session_view, name="session-get"),
     path("session/set/", set_session_view, name="session-set"),
     path("foo-bar/", FooBarView.as_view(), name="foo-bar"),
 ]

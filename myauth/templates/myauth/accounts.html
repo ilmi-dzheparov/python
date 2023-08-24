@@ -1,0 +1,40 @@
+{% extends 'myauth/base.html' %}
+{% block style %}
+    .underlined-text {
+        text-decoration: underline;
+    }
+    .image {
+        height: 150px;
+    }
+{% endblock %}
+{% block title %}
+    Users
+{% endblock %}
+
+{% block body %}
+<div>
+    {% for user in users %}
+
+        <div>
+            {% if request.user.is_staff or request.user.is_superuser or user.is_authenticated %}
+                 <p><a href="{% url 'myauth:user_details' pk=user.pk %}">Name: {{user.username}}. ID {{user.pk}}</a></p>
+            {% else %}
+                <p class="underlined-text">Name: {{user.username}}</p>
+            {% endif %}
+            <div>
+                {% if user.profile.avatar %}
+                <img class="image" src="{{user.profile.avatar.url}}" alt="{{user.profile.avatar.name}}">
+
+                {% else %}
+                No uploaded avatar yet
+                {% endif %}
+            </div>
+
+
+<!--            <p>First name: {{user.first_name}}</p>-->
+<!--            <p>Second name: {{user.last_name}}</p>-->
+<!--            <p>Bio: {{user.profile.bio}}</p>-->
+
+    {% endfor %}
+        </div>
+{% endblock %}

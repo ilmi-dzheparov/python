@@ -4,6 +4,7 @@
     .avatar {
         width: 150px;
     }
+
 {% endblock %}
 
 {% block title %}
@@ -15,12 +16,20 @@
 {% if user.is_authenticated %}
     <h2>Detail</h2>
     <div>
-       {% if user.avatar %}
-            <img class="avatar" src="{{user.avatar.url}}" alt="{{user.avatar.name}}">
+        {% if user.profile.avatar %}
+            <img class="avatar" src="{{user.profile.avatar.url}}" alt="{{user.avatar.name}}">
         {% else %}
             Avatar has not uploaded yet
         {% endif %}
     </div>
+    <div>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Upload avatar</button>
+        </form>
+    </div>
+
     <p>Username: {{user.username}}</p>
     <p>First name: {{user.first_name}}</p>
     <p>Second name: {{user.last_name}}</p>

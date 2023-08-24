@@ -3,7 +3,7 @@ from django.db import models
 
 
 def profile_avatar_path(instance: "Profile", filename: str) -> str:
-    return "myauth/user_{id}/avatars/{filename}".format(
+    return "myauth/avatars/user_{id}/{filename}".format(
         id=instance.user.pk,
         filename=filename,
     )

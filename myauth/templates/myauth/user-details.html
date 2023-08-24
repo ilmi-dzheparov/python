@@ -1,0 +1,37 @@
+{% extends 'myauth/base.html' %}
+
+{% block style %}
+    .image {
+        height: 150px;
+    }
+{% endblock %}
+{% block title %}
+    User details
+{% endblock %}
+
+{% block body %}
+<div>
+    <div>
+        <p>Name: {% firstof user.username user.first_name %}</p>
+        <div>
+            {% if user.profile.avatar %}
+                <img class="image" src="{{user.profile.avatar.url}}" alt="{{user.profile.avatar.name}}">
+                <br>
+            {% else %}
+                    No uploaded avatar yet
+            {% endif %}
+        </div>
+        <div>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Upload avatar</button>
+        </form>
+        </div>
+
+        <p>First name: {{user.first_name}}</p>
+        <p>Second name: {{user.last_name}}</p>
+        <p>Bio: {{user.profile.bio}}</p>
+    </div>
+</div>
+{% endblock %}
