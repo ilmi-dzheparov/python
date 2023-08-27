@@ -1,5 +1,5 @@
 {% extends 'shopapp/base.html' %}
-
+{% load i18n %}
 {% block style %}
     .preview img {
         width: 250px;
@@ -10,52 +10,67 @@
 {% endblock %}
 
 {% block title %}
-Product # {{product.pk}}
+{% translate 'Product' %} # {{product.pk}}
 {% endblock %}
 
 {% block body %}
-<h1>Product <strong>{{product.name}}</strong></h1>
+{% blocktranslate %}
+<h1>Product<strong>{{product.name}}</strong></h1>
 <div>
     <div>Description: <em>{{product.description}}</em></div>
     <br>
     <div>Price: {{product.price}}</div>
     <br>
+{% endblocktranslate %}
     <div class="preview">
         {% if product.preview %}
-        <p>Preview:</p>
+        <p>{% translate 'Preview' %}:</p>
         <img src="{{product.preview.url}}" alt="{{product.preview.name}}">
         {% endif %}
     </div>
-    <h3>Images:</h3>
+    <h3>{% translate 'Images' %}:</h3>
     <div>
+        <div>
+        {% blocktranslate count img_count=product.images.all|length %}
+            There is only one image
+        {% plural %}
+            There are {{img_count}} images
+        {% endblocktranslate %}
+        </div>
+        <br>
         {% for img in product.images.all %}
             <div>
                 <img class="images" src="{{img.image.url}}" alt="{{img.image.name}}">
                 <div>{{img.description}}</div>
             </div>
         {% empty %}
-            <p>No images uploaded yet</p>
+            <p>{% translate 'No images uploaded yet' %}</p>
         {% endfor %}
     </div>
     <br>
-    <div>Discount: {{product.discount}}</div>
+    <div>{% translate 'Discount' %}: {{product.discount}}</div>
     <br>
-    <div>Created by {% firstof product.created_by.first_name product.created_by.username %}</div>
+    <div>{% translate 'Created by' %} {% firstof product.created_by.first_name product.created_by.username %}</div>
     <br>
-    <div>Archived: {{product.archived}}</div>
+    <div>{% translate 'Archived' %}: {{product.archived}}</div>
     <br>
 </div>
 <br>
+{% url 'shopapp:product_update' pk=product.pk as product_update %}
+{% url 'shopapp:product_delete' pk=product.pk as product_delete %}
+{% url 'shopapp:products_list' as products_list %}
+{% blocktranslate %}
 <div>
-    <a href="{% url 'shopapp:product_update' pk=product.pk %}">Update product</a>
+    <a href="{{product_update}}">Update product</a>
 </div>
 <br>
 <div>
-    <a href="{% url 'shopapp:product_delete' pk=product.pk %}">Archive product</a>
+    <a href="{{product_delete}}">Archive product</a>
 </div>
 <br>
 <div>
-    <a href="{% url 'shopapp:products_list' %}">Return to products list</a>
+    <a href="{{products_list}}">Return to products list</a>
 </div>
+{% endblocktranslate %}
 <br>
 {% endblock %}

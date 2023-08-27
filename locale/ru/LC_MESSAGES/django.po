@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-27 10:12+0000\n"
+"POT-Creation-Date: 2023-08-27 10:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,13 +41,126 @@ msgstr ""
 msgid "Russian"
 msgstr "Русский"
 
-#: shopapp/templates/shopapp/products-list.html:11
-msgid "Products list"
-msgstr ""
+#: shopapp/models.py:17 shopapp/templates/shopapp/products-detail.html:13
+msgid "Product"
+msgstr "Товар"
 
-#: shopapp/templates/shopapp/products-list.html:16
+#: shopapp/models.py:18 shopapp/templates/shopapp/products-list.html:16
 msgid "Products"
 msgstr "Товары"
+
+#: shopapp/models.py:47
+msgid "Order"
+msgstr "Заказ"
+
+#: shopapp/models.py:48
+msgid "Orders"
+msgstr "Заказы"
+
+#: shopapp/templates/shopapp/products-detail.html:17
+#, python-format
+msgid ""
+"\n"
+"<h1>Product<strong>%(product.name)s</strong></h1>\n"
+"<div>\n"
+"    <div>Description: <em>%(product.description)s</em></div>\n"
+"    <br>\n"
+"    <div>Price: %(product.price)s</div>\n"
+"    <br>\n"
+msgstr ""
+"\n"
+"<h1>Товар<strong>%(product.name)s</strong></h1>\n"
+"<div>\n"
+"    <div>Описание: <em>%(product.description)s</em></div>\n"
+"    <br>\n"
+"    <div>Цена: %(product.price)s</div>\n"
+"    <br>\n"
+
+#: shopapp/templates/shopapp/products-detail.html:27
+#: shopapp/templates/shopapp/products-list.html:29
+msgid "Preview"
+msgstr "Превью"
+
+#: shopapp/templates/shopapp/products-detail.html:31
+msgid "Images"
+msgstr "Изображения"
+
+#: shopapp/templates/shopapp/products-detail.html:34
+msgid ""
+"\n"
+"            There is only one image\n"
+"        "
+msgid_plural ""
+"\n"
+"            There are %(img_count)s images\n"
+"        "
+msgstr[0] ""
+"\n"
+"            Загружено %(img_count)s изображение\n"
+"        "
+msgstr[1] ""
+"\n"
+"            Загружены %(img_count)s изображения\n"
+"        "
+
+msgstr[2] ""
+"\n"
+"            Загружены %(img_count)s изображений\n"
+"        "
+msgstr[3] ""
+"\n"
+"            Загружены %(img_count)s изображений\n"
+"        "
+
+#: shopapp/templates/shopapp/products-detail.html:47
+msgid "No images uploaded yet"
+msgstr "Изображения пока не загружены"
+
+#: shopapp/templates/shopapp/products-detail.html:51
+#: shopapp/templates/shopapp/products-list.html:27
+msgid "Discount"
+msgstr "Скидка"
+
+#: shopapp/templates/shopapp/products-detail.html:53
+msgid "Created by"
+msgstr "Объект создан"
+
+#: shopapp/templates/shopapp/products-detail.html:55
+msgid "Archived"
+msgstr "Архивирован"
+
+#: shopapp/templates/shopapp/products-detail.html:62
+#, python-format
+msgid ""
+"\n"
+"<div>\n"
+"    <a href=\"%(product_update)s\">Update product</a>\n"
+"</div>\n"
+"<br>\n"
+"<div>\n"
+"    <a href=\"%(product_delete)s\">Archive product</a>\n"
+"</div>\n"
+"<br>\n"
+"<div>\n"
+"    <a href=\"%(products_list)s\">Return to products list</a>\n"
+"</div>\n"
+msgstr ""
+"\n"
+"<div>\n"
+"    <a href=\"%(product_update)s\">Изменить товар</a>\n"
+"</div>\n"
+"<br>\n"
+"<div>\n"
+"    <a href=\"%(product_delete)s\">Архивировать товар</a>\n"
+"</div>\n"
+"<br>\n"
+"<div>\n"
+"    <a href=\"%(products_list)s\">Вернуться к списку товаров</a>\n"
+"</div>\n"
+
+#: shopapp/templates/shopapp/products-list.html:11
+msgid "Products list"
+msgstr "Список товаров"
 
 #: shopapp/templates/shopapp/products-list.html:24
 msgctxt "product name"
@@ -61,14 +174,6 @@ msgstr "Цена"
 #: shopapp/templates/shopapp/products-list.html:26
 msgid "no discount"
 msgstr "нет скидки"
-
-#: shopapp/templates/shopapp/products-list.html:27
-msgid "Discount"
-msgstr "Скидка"
-
-#: shopapp/templates/shopapp/products-list.html:29
-msgid "Preview"
-msgstr "Превью"
 
 #: shopapp/templates/shopapp/products-list.html:34
 msgid "No preview yet"

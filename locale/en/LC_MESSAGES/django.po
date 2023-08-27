@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-27 10:12+0000\n"
+"POT-Creation-Date: 2023-08-27 10:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,12 +37,92 @@ msgstr ""
 msgid "Russian"
 msgstr ""
 
-#: shopapp/templates/shopapp/products-list.html:11
-msgid "Products list"
+#: shopapp/models.py:17 shopapp/templates/shopapp/products-detail.html:13
+msgid "Product"
+msgstr "Product"
+
+#: shopapp/models.py:18 shopapp/templates/shopapp/products-list.html:16
+msgid "Products"
 msgstr ""
 
-#: shopapp/templates/shopapp/products-list.html:16
-msgid "Products"
+#: shopapp/models.py:47
+msgid "Order"
+msgstr ""
+
+#: shopapp/models.py:48
+msgid "Orders"
+msgstr ""
+
+#: shopapp/templates/shopapp/products-detail.html:17
+#, python-format
+msgid ""
+"\n"
+"<h1>Product<strong>%(product.name)s</strong></h1>\n"
+"<div>\n"
+"    <div>Description: <em>%(product.description)s</em></div>\n"
+"    <br>\n"
+"    <div>Price: %(product.price)s</div>\n"
+"    <br>\n"
+msgstr ""
+
+#: shopapp/templates/shopapp/products-detail.html:27
+#: shopapp/templates/shopapp/products-list.html:29
+msgid "Preview"
+msgstr ""
+
+#: shopapp/templates/shopapp/products-detail.html:31
+msgid "Images"
+msgstr ""
+
+#: shopapp/templates/shopapp/products-detail.html:34
+#, python-format
+msgid ""
+"\n"
+"            There is only one image\n"
+"        "
+msgid_plural ""
+"\n"
+"            There are %(img_count)s images\n"
+"        "
+msgstr[0] ""
+msgstr[1] ""
+
+#: shopapp/templates/shopapp/products-detail.html:47
+msgid "No images uploaded yet"
+msgstr ""
+
+#: shopapp/templates/shopapp/products-detail.html:51
+#: shopapp/templates/shopapp/products-list.html:27
+msgid "Discount"
+msgstr ""
+
+#: shopapp/templates/shopapp/products-detail.html:53
+msgid "Created by"
+msgstr ""
+
+#: shopapp/templates/shopapp/products-detail.html:55
+msgid "Archived"
+msgstr ""
+
+#: shopapp/templates/shopapp/products-detail.html:62
+#, python-format
+msgid ""
+"\n"
+"<div>\n"
+"    <a href=\"%(product_update)s\">Update product</a>\n"
+"</div>\n"
+"<br>\n"
+"<div>\n"
+"    <a href=\"%(product_delete)s\">Archive product</a>\n"
+"</div>\n"
+"<br>\n"
+"<div>\n"
+"    <a href=\"%(products_list)s\">Return to products list</a>\n"
+"</div>\n"
+msgstr ""
+
+#: shopapp/templates/shopapp/products-list.html:11
+msgid "Products list"
 msgstr ""
 
 #: shopapp/templates/shopapp/products-list.html:24
@@ -56,14 +136,6 @@ msgstr ""
 
 #: shopapp/templates/shopapp/products-list.html:26
 msgid "no discount"
-msgstr ""
-
-#: shopapp/templates/shopapp/products-list.html:27
-msgid "Discount"
-msgstr ""
-
-#: shopapp/templates/shopapp/products-list.html:29
-msgid "Preview"
 msgstr ""
 
 #: shopapp/templates/shopapp/products-list.html:34
