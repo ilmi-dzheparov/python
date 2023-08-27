@@ -9,6 +9,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.urls import reverse_lazy
 from django.views import View
 from django.views.generic import TemplateView, CreateView, UpdateView, DetailView, ListView
+from django.utils.translation import gettext_lazy as _, ngettext
 
 from myauth.models import Profile
 from myauth.forms import ProfileUploaFileForm
@@ -22,6 +23,22 @@ class StaffRequiredMixin(LoginRequiredMixin, UserPassesTestMixin):
                 self.get_object().pk == self.request.user.pk
                 )
 
+
+class HelloView(View):
+    welcome_message = _("welcome hello word")
+    def get(self, request: HttpRequest) -> HttpResponse:
+        items_str = self.request.GET.get("items") or 0
+        items = int(items_str)
+        products_line = ngettext(
+            "one product",
+            "{count} products",
+            items,
+        )
+        product_line = products_line.format(count=items)
+        return HttpResponse(
+            f"<h1>{self.welcome_message}</h1>" 
+            f"<h2>{product_line}</h2>"
+        )
 
 
 def login_view(request: HttpRequest) -> HttpResponse:
