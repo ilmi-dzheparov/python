@@ -26,6 +26,8 @@ urlpatterns = [
     path("shop/", include("shopapp.urls")),
     path("req/", include("requestdataapp.urls")),
     path("accounts/", include("myauth.urls")),
+    path("admin/", admin.site.urls),
+    path("api/", include("myapiapp.urls")),
 ]
 
 urlpatterns += i18n_patterns(

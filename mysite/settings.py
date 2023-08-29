@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     "shopapp.apps.ShopappConfig",
     "requestdataapp.apps.RequestdataappConfig",
     "myauth.apps.MyauthConfig",
+    "myapiapp.apps.MyapiappConfig",
+    'rest_framework',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -58,6 +61,14 @@ MIDDLEWARE = [
     "requestdataapp.middlewares.set_useragent_on_request_middleware",
     "requestdataapp.middlewares.CountRequestsMiddleware",
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
+    "PAGE_SIZE": 10,
+    "DEFAULT_FILTER_BACKENDS": [
+        "django_filters.rest_framework.DjangoFilterBackend",
+    ]
+}
 
 ROOT_URLCONF = "mysite.urls"
 
