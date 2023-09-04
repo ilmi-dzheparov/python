@@ -9,14 +9,14 @@ from shopapp.models import Product, Order
 class GroupForm(ModelForm):
     class Meta:
         model = Group
-        fields = "name",
-
+        fields = ("name",)
 
 
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         fields = "name", "price", "description", "discount", "preview"
+
     # images = forms.ImageField(
     #     widget=forms.ClearableFileInput(attrs={"multiple": True})
     # )
@@ -28,13 +28,12 @@ class OrderForm(forms.ModelForm):
     # user = forms.Select(User)
     products = forms.ModelMultipleChoiceField(
         widget=forms.CheckboxSelectMultiple,
-        queryset=Product.objects.all().order_by('pk')
+        queryset=Product.objects.all().order_by("pk"),
     )
+
     class Meta:
         model = Order
         fields = "delivery_address", "promocode", "user"
-
-
 
 
 # class ProductForm(forms.Form):

@@ -17,11 +17,12 @@ class ProductSerializer(serializers.ModelSerializer):
             "images",
         )
 
+
 class OrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order
         fields = (
-            'pk',
+            "pk",
             "delivery_address",
             "promocode",
             "created_at",

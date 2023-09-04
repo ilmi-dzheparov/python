@@ -15,21 +15,22 @@ class ProductInline(admin.StackedInline):
 
 
 @admin.action(description="Archive products")
-def mark_archived(modeladmin: admin.ModelAdmin, request:HttpRequest, queryset: QuerySet):
+def mark_archived(
+    modeladmin: admin.ModelAdmin, request: HttpRequest, queryset: QuerySet
+):
     queryset.update(archived=True)
 
 
 @admin.action(description="Unarchive products")
-def mark_unarchived(modeladmin: admin.ModelAdmin, request:HttpRequest, queryset: QuerySet):
+def mark_unarchived(
+    modeladmin: admin.ModelAdmin, request: HttpRequest, queryset: QuerySet
+):
     queryset.update(archived=False)
+
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin, ExportAsCSVMixin):
-    actions = [
-        mark_archived,
-        mark_unarchived,
-        "export_csv"
-    ]
+    actions = [mark_archived, mark_unarchived, "export_csv"]
     list_display = "pk", "name", "description_short", "price", "discount", "archived"
     list_display_links = "pk", "name"
     ordering = "pk", "name"
@@ -39,30 +40,38 @@ class ProductAdmin(admin.ModelAdmin, ExportAsCSVMixin):
         ProductInline,
     ]
     fieldsets = [
-        (None, {
-            "fields": ("name", "description")
-        }),
-        ("Price options", {
-            "fields": ("price", "discount"),
-            "classes": ("wide", "collapse"),
-        }),
-        ("Images", {
-            "fields": ("preview",),
-        }),
-        ("Extra options", {
-            "fields": ("archived",),
-            "classes": ("collapse",),
-            "description": "Extra options. Field 'archived' is for soft delete",
-        }),
+        (None, {"fields": ("name", "description")}),
+        (
+            "Price options",
+            {
+                "fields": ("price", "discount"),
+                "classes": ("wide", "collapse"),
+            },
+        ),
+        (
+            "Images",
+            {
+                "fields": ("preview",),
+            },
+        ),
+        (
+            "Extra options",
+            {
+                "fields": ("archived",),
+                "classes": ("collapse",),
+                "description": "Extra options. Field 'archived' is for soft delete",
+            },
+        ),
     ]
-
 
     def description_short(self, obj: Product) -> str:
         if len(obj.description) < 48:
             return obj.description
-        return obj.description[:48] + '...'
+        return obj.description[:48] + "..."
+
 
 # admin.site.register(Product, ProductAdmin)
+
 
 class ProductInline(admin.StackedInline):
     model = Order.products.through
