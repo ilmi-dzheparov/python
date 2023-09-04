@@ -146,7 +146,7 @@ class ProductsListView(ListView):
 
 class OrdersListView(LoginRequiredMixin, ListView):
     queryset = (Order.objects
-                # .select_related("user")
+                .select_related("user")
                 .prefetch_related("products"))
 
 

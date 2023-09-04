@@ -45,6 +45,7 @@ urlpatterns += i18n_patterns(
     path("shop/", include("shopapp.urls")),
     # path("req/", include("requestdataapp.urls")),
     path("accounts/", include("myauth.urls")),
+    path("blog/", include("blogapp.urls")),
 )
 
 if settings.DEBUG: #add ways to statics
