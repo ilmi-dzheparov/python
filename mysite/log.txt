@@ -2,3 +2,51 @@
 2023-09-06 08:00:33,911 [INFO] shopapp.views: Rendering shop index
 2023-09-06 08:10:48,894 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2023-09-06 08:10:52,303 [INFO] shopapp.views: Rendering shop index
+2023-09-06 11:19:19,417 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-06 11:19:30,040 [WARNING] django.request: Not Found: /
+2023-09-06 11:19:38,824 [WARNING] django.request: Not Found: /
+2023-09-06 11:35:50,195 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/shopapp/views.py changed, reloading.
+2023-09-06 11:35:51,162 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-06 11:35:55,016 [ERROR] django.request: Internal Server Error: /en/shop/products/export/
+Traceback (most recent call last):
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/mysite/shopapp/views.py", line 327, in get
+    name = elem['naem']
+           ~~~~^^^^^^^^
+KeyError: 'naem'
+2023-09-06 11:53:22,689 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/mysite/settings.py changed, reloading.
+2023-09-06 11:53:23,700 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-06 11:53:49,326 [ERROR] django.request: Internal Server Error: /en/shop/products/export/
+Traceback (most recent call last):
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/mysite/shopapp/views.py", line 327, in get
+    name = elem['naem']
+           ~~~~^^^^^^^^
+KeyError: 'naem'
+2023-09-06 11:56:36,510 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/shopapp/views.py changed, reloading.
+2023-09-06 11:56:37,953 [INFO] django.utils.autoreload: Watching for file changes with StatReloader

@@ -17,6 +17,25 @@ import django.utils.log
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
 
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
+sentry_sdk.init(
+    dsn="https://58859cf9f1174018a46e2a15987bc537@o4505833348530176.ingest.sentry.io/4505833366290432",
+    integrations=[DjangoIntegration()],
+    # If you wish to associate users to errors (assuming you are using
+    # django.contrib.auth) you may enable sending PII data.
+    send_default_pii=True,
+    # Set traces_sample_rate to 1.0 to capture 100%
+    # of transactions for performance monitoring.
+    # We recommend adjusting this value in production.
+    traces_sample_rate=1.0,
+    # Set profiles_sample_rate to 1.0 to profile 100%
+    # of sampled transactions.
+    # We recommend adjusting this value in production.
+    profiles_sample_rate=1.0,
+)
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -30,11 +49,24 @@ SECRET_KEY = "django-insecure-gb*am(6_#z_9jgjw)201nnhm3m9r8@7e&m5d@m@)3v4gu=u-m1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "0.0.0.0",
+    "127.0.0.1",
+]
 
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+if DEBUG:
+    import socket
+    hostname, __, ips = socket.gethostbyname_ex(
+        socket.gethostname()
+    )
+    INTERNAL_IPS.append("10.0.2.2")
+    INTERNAL_IPS.extend(
+        [ip[:ip.rfind(".")] + ".1" for ip in ips]
+    )
 
 
 # Application definition
