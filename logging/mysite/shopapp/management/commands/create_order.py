@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django.core.management import BaseCommand
 from django.db import transaction
 
-from shopapp.models import Order, Product
+from mysite.shopapp import Order, Product
 
 
 class Command(BaseCommand):

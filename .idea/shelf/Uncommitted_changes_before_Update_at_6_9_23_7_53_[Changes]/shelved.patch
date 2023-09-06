@@ -1,0 +1,314 @@
+Index: requirements.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>asgiref==3.7.2\nattrs==23.1.0\nDjango==4.2.4\ndjango-filter==23.2\ndjangorestframework==3.14.0\ndocutils==0.20.1\ndrf-spectacular==0.26.4\nflake8==6.1.0\nflake8-docstrings==1.7.0\ninflection==0.5.1\njsonschema==4.19.0\njsonschema-specifications==2023.7.1\nmccabe==0.7.0\nPillow==10.0.0\npycodestyle==2.11.0\npydocstyle==6.3.0\npyflakes==3.1.0\npytz==2023.3\nPyYAML==6.0.1\nreferencing==0.30.2\nrpds-py==0.10.0\nsnowballstemmer==2.2.0\nsqlparse==0.4.4\nuritemplate==4.1.1\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/requirements.txt b/requirements.txt
+--- a/requirements.txt	(revision d983817c1b460331903eca8dc5c8c3a16ad14643)
++++ b/requirements.txt	(date 1693891951568)
+@@ -1,6 +1,9 @@
+ asgiref==3.7.2
+ attrs==23.1.0
++black==23.7.0
++click==8.1.7
+ Django==4.2.4
++django-debug-toolbar==4.2.0
+ django-filter==23.2
+ djangorestframework==3.14.0
+ docutils==0.20.1
+@@ -11,7 +14,11 @@
+ jsonschema==4.19.0
+ jsonschema-specifications==2023.7.1
+ mccabe==0.7.0
++mypy-extensions==1.0.0
++packaging==23.1
++pathspec==0.11.2
+ Pillow==10.0.0
++platformdirs==3.10.0
+ pycodestyle==2.11.0
+ pydocstyle==6.3.0
+ pyflakes==3.1.0
+Index: shopapp/views.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\nВ этом модуле лежат различные наборы представлений\nдля интернет-магазина: по товарам, по заказам и т.д.\n\"\"\"\n\nfrom timeit import default_timer\n\nfrom django.contrib.auth.mixins import (\n    LoginRequiredMixin,\n    PermissionRequiredMixin,\n    UserPassesTestMixin,\n)\nfrom django.contrib.auth.models import Group\n\nfrom django.http import HttpResponse, HttpRequest, HttpResponseRedirect, JsonResponse\nfrom django.shortcuts import render, redirect, reverse\nfrom django.urls import reverse_lazy\nfrom django.views import View\nfrom django.views.generic import (\n    TemplateView,\n    ListView,\n    DetailView,\n    CreateView,\n    UpdateView,\n    DeleteView,\n)\nfrom django_filters.rest_framework import DjangoFilterBackend\nfrom drf_spectacular.utils import extend_schema, OpenApiResponse\n\nfrom shopapp.forms import ProductForm, OrderForm, GroupForm\nfrom shopapp.models import Product, Order, ProductImage\n\nfrom rest_framework.viewsets import ModelViewSet\nfrom rest_framework.filters import SearchFilter, OrderingFilter\nfrom .serializers import ProductSerializer, OrderSerializer\n\n\n@extend_schema(description=\"Product views CRUD\")\nclass ProductViewSet(ModelViewSet):\n    \"\"\"\n    Набор представлений для действий над Product.\n\n    Полный CRUD для сущностей товара\n    \"\"\"\n\n    queryset = Product.objects.all()\n    serializer_class = ProductSerializer\n    filter_backends = [\n        SearchFilter,\n        DjangoFilterBackend,\n        OrderingFilter,\n    ]\n    search_fields = [\"name\", \"description\"]\n    ordering_fields = [\"name\", \"price\", \"discount\"]\n    filterset_fields = [\n        \"name\",\n        \"description\",\n        \"price\",\n        \"discount\",\n        \"archived\",\n    ]\n\n    @extend_schema(\n        summary=\"Get one product by ID\",\n        description=\"Retrieves product, returns 404 if not found\",\n        responses={\n            200: ProductSerializer,\n            404: OpenApiResponse(description=\"Empty response, product by ID not found\"),\n        },\n    )\n    def retrieve(self, *args, **kwargs):\n        return super().retrieve(*args, **kwargs)\n\n\nclass OrderViewSet(ModelViewSet):\n    queryset = Order.objects.all()\n    serializer_class = OrderSerializer\n    filter_backends = [\n        # SearchFilter,\n        DjangoFilterBackend,\n        OrderingFilter,\n    ]\n    # search_fields = [\"user\", \"description\"]\n    ordering_fields = [\"user\", \"created_at\"]\n    filterset_fields = [\n        \"user\",\n        \"delivery_address\",\n        \"promocode\",\n    ]\n\n\nclass ShopIndexView(View):\n    def get(self, request: HttpRequest) -> HttpResponse:\n        products = [\n            (\"Laptop\", 1999),\n            (\"Desktop\", 2999),\n            (\"Smartphone\", 999),\n        ]\n        context = {\n            \"time_running\": default_timer(),\n            \"products\": products,\n        }\n        return render(request, \"shopapp/shop-index.html\", context=context)\n\n\nclass GroupsListView(View):\n    def get(self, request: HttpRequest) -> HttpResponse:\n        context = {\n            \"form\": GroupForm(),\n            \"groups\": Group.objects.prefetch_related(\"permissions\").all(),\n        }\n        return render(request, \"shopapp/groups-list.html\", context=context)\n\n    def post(self, request: HttpRequest):\n        form = GroupForm(request.POST)\n        if form.is_valid():\n            form.save()\n        return redirect(request.path)\n\n\nclass ProductDetailView(DetailView):\n    template_name = \"shopapp/products-detail.html\"\n    # model = Product\n    queryset = Product.objects.prefetch_related(\"images\")\n    context_object_name = \"product\"\n\n    # def get(self, request: HttpRequest, pk: int) -> HttpResponse:\n    #     product = get_object_or_404(Product, pk=pk) #Product.objects.get(pk=pk)\n    #     context = {\n    #         \"product\": product,\n    #     }\n    #     return render(request, 'shopapp/products-detail.html', context=context)\n\n\nclass ProductsListView(ListView):\n    template_name = \"shopapp/products-list.html\"\n    # model = Product\n    queryset = Product.objects.filter(archived=False)\n    context_object_name = \"products\"\n\n    # def get_context_data(self, **kwargs):\n    #     context = super().get_context_data(**kwargs)\n    #     context[\"products\"] = Product.objects.all()\n    #     return context\n\n\nclass OrdersListView(LoginRequiredMixin, ListView):\n    queryset = (Order.objects\n                .select_related(\"user\")\n                .prefetch_related(\"products\"))\n\n\n# def orders_list(request: HttpRequest):\n#     context = {\n#         \"orders\": Order.objects.select_related(\"user\").prefetch_related(\"products\").all()\n#     }\n#     return render(request, \"shopapp/order_list.html\", context=context)\n\n\nclass OrderDetailView(PermissionRequiredMixin, DetailView):\n    permission_required = [\"shopapp.view_order\"]\n    queryset = Order.objects.select_related(\"user\").prefetch_related(\"products\")\n    context_object_name = \"order\"\n\n\nclass ProductCreateView(PermissionRequiredMixin, CreateView):\n    permission_required = [\n        \"shopapp.add_product\",\n    ]\n    model = Product\n    # fields = \"name\", \"price\", \"description\", \"discount\n    form_class = ProductForm\n    success_url = reverse_lazy(\"shopapp:products_list\")\n\n    def form_valid(self, form):\n        form.instance.created_by = self.request.user\n        form.save()\n        return super().form_valid(form)\n\n\n# def create_product(request: HttpRequest):\n#     if request.method == \"POST\":\n#         form = ProductForm(request.POST)\n#         if form.is_valid():\n#             # name = form.cleaned_data[\"name\"]\n#             # price = form.cleaned_data[\"price\"]\n#             Product.objects.create(**form.cleaned_data)\n#             url = reverse(\"shopapp:products_list\")\n#             return redirect(url)\n#     else:\n#         form = ProductForm()\n#     context = {\n#         \"form\": form,\n#     }\n#     return render(request, \"shopapp/product_form.html\", context=context)\n\n\nclass ProductUpdateView(UserPassesTestMixin, UpdateView):\n    def test_func(self):\n        # return  self.request.user.groups.filter(name=\"secret-group\").exists\n        return self.request.user.is_superuser or (\n            self.request.user.has_perm(\"shopapp.add_product\")\n            and self.get_object().created_by == self.request.user\n        )\n\n    model = Product\n    # fields = \"name\", \"price\", \"description\", \"discount\", \"preview\"\n    form_class = ProductForm\n    template_name_suffix = \"_update_form\"\n\n    def get_success_url(self):\n        return reverse(\n            \"shopapp:products_detail\",\n            kwargs={\"pk\": self.object.pk},\n        )\n\n    def form_valid(self, form):\n        response = super().form_valid(form)\n        for image in form.files.getlist(\"images\"):\n            ProductImage.objects.create(product=self.object, image=image)\n        return response\n\n\nclass ProductDeleteView(DeleteView):\n    model = Product\n    success_url = reverse_lazy(\"shopapp:products_list\")\n\n    def form_valid(self, form):\n        success_url = self.get_success_url()\n        self.object.archived = True\n        self.object.save()\n        return HttpResponseRedirect(success_url)\n\n\nclass OrderCreateView(CreateView):\n    model = Order\n    # fields = \"delivery_address\", \"promocode\", \"user\", \"products\"\n    success_url = reverse_lazy(\"shopapp:orders_list\")\n    form_class = OrderForm\n\n    def form_valid(self, form):\n        form.save()\n        products = form.cleaned_data[\"products\"]\n        for product in products:\n            form.instance.products.add(product)\n        return super().form_valid(form)\n\n\nclass OrderUpdateView(UpdateView):\n    model = Order\n    success_url = reverse_lazy(\"shopapp:orders_list\")\n    form_class = OrderForm\n    template_name_suffix = \"_update_form\"\n\n    def form_valid(self, form):\n        form.save()\n        products = form.cleaned_data[\"products\"]\n        for product in products:\n            form.instance.products.add(product)\n        return super().form_valid(form)\n\n    def get_success_url(self):\n        return reverse(\n            \"shopapp:order_detail\",\n            kwargs={\"pk\": self.object.pk},\n        )\n\n\nclass OrderDeleteView(DeleteView):\n    model = Order\n    success_url = reverse_lazy(\"shopapp:orders_list\")\n    # def form_valid(self, form):\n    #     success_url = self.get_success_url()\n    #     self.object.archived = True\n    #     self.object.save()\n    #     return HttpResponseRedirect(success_url)\n\n\n# def create_order(request: HttpRequest):\n#\n#     if request.method == \"POST\":\n#         form = OrderForm(request.POST)\n#         if form.is_valid():\n#             delivery_address = form.cleaned_data[\"delivery_address\"]\n#             promocode = form.cleaned_data[\"promocode\"]\n#             user = form.cleaned_data[\"user\"]\n#             products = form.cleaned_data['products']\n#             obj = Order(\n#                 delivery_address = delivery_address,\n#                 promocode = promocode,\n#                 user = user,\n#             )\n#             obj.save()\n#             for elem in products:\n#                 obj.products.add(elem)\n#\n#             url = reverse(\"shopapp:orders_list\")\n#             return redirect(url)\n#     else:\n#         print('ERROR')\n#         form = OrderForm()\n#     context = {\n#         \"form\": form,\n#     }\n#     return render(request, \"shopapp/order_form.html\", context=context)\n\n\nclass ProductsDataExportView(View):\n    def get(self, request: HttpRequest) -> HttpResponse:\n        products = Product.objects.order_by(\"pk\").all()\n        products_data = [\n            {\n                \"pk\": product.pk,\n                \"name\": product.name,\n                \"price\": product.price,\n                \"archived\": product.archived,\n            }\n            for product in products\n        ]\n        return JsonResponse({\"products\": products_data})\n\n\nclass StaffRequiredMixin(LoginRequiredMixin, UserPassesTestMixin):\n    def test_func(self):\n        return self.request.user.is_staff\n\n\n# @staff_member_required\nclass OrdersDataExportView(StaffRequiredMixin, View):\n    def get(self, request: HttpRequest) -> JsonResponse:\n        orders = Order.objects.order_by(\"pk\").all()\n        orders_data = [\n            {\n                \"pk\": order.pk,\n                \"delivery_address\": order.delivery_address,\n                \"promocode\": order.promocode,\n                \"user_id\": order.user,\n                \"orders_list\": [product.pk for product in order.products],\n            }\n            for order in orders\n        ]\n        return JsonResponse({\"orders\": orders_data})\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/shopapp/views.py b/shopapp/views.py
+--- a/shopapp/views.py	(revision d983817c1b460331903eca8dc5c8c3a16ad14643)
++++ b/shopapp/views.py	(date 1693850785274)
+@@ -2,7 +2,7 @@
+ В этом модуле лежат различные наборы представлений
+ для интернет-магазина: по товарам, по заказам и т.д.
+ """
+-
++import logging
+ from timeit import default_timer
+ 
+ from django.contrib.auth.mixins import (
+@@ -34,6 +34,7 @@
+ from rest_framework.filters import SearchFilter, OrderingFilter
+ from .serializers import ProductSerializer, OrderSerializer
+ 
++log = logging.getLogger(__name__)
+ 
+ @extend_schema(description="Product views CRUD")
+ class ProductViewSet(ModelViewSet):
+@@ -90,6 +91,7 @@
+ 
+ 
+ class ShopIndexView(View):
++
+     def get(self, request: HttpRequest) -> HttpResponse:
+         products = [
+             ("Laptop", 1999),
+@@ -100,6 +102,8 @@
+             "time_running": default_timer(),
+             "products": products,
+         }
++        log.debug("Product for shop index: %s", products)
++        log.info("Rendering shop index")
+         return render(request, "shopapp/shop-index.html", context=context)
+ 
+ 
+Index: mysite/settings.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\nDjango settings for mysite project.\n\nGenerated by 'django-admin startproject' using Django 4.2.4.\n\nFor more information on this file, see\nhttps://docs.djangoproject.com/en/4.2/topics/settings/\n\nFor the full list of settings and their values, see\nhttps://docs.djangoproject.com/en/4.2/ref/settings/\n\"\"\"\nimport logging\nfrom pathlib import Path\n\nimport django.utils.log\nfrom django.urls import reverse_lazy\nfrom django.utils.translation import gettext_lazy as _\n\n# Build paths inside the project like this: BASE_DIR / 'subdir'.\nBASE_DIR = Path(__file__).resolve().parent.parent\n\n\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-gb*am(6_#z_9jgjw)201nnhm3m9r8@7e&m5d@m@)3v4gu=u-m1\"\n\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n\nALLOWED_HOSTS = []\n\n\n# Application definition\n\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"django.contrib.admindocs\",\n    \"shopapp.apps.ShopappConfig\",\n    \"requestdataapp.apps.RequestdataappConfig\",\n    \"myauth.apps.MyauthConfig\",\n    \"myapiapp.apps.MyapiappConfig\",\n    'rest_framework',\n    'django_filters',\n    'drf_spectacular',\n    'blogapp.apps.BlogappConfig',\n]\n\nMIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.contrib.admindocs.middleware.XViewMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n    \"django.middleware.locale.LocaleMiddleware\",\n\n    \"requestdataapp.middlewares.set_useragent_on_request_middleware\",\n    \"requestdataapp.middlewares.CountRequestsMiddleware\",\n]\n\nREST_FRAMEWORK = {\n    \"DEFAULT_PAGINATION_CLASS\": \"rest_framework.pagination.PageNumberPagination\",\n    \"PAGE_SIZE\": 10,\n    \"DEFAULT_FILTER_BACKENDS\": [\n        \"django_filters.rest_framework.DjangoFilterBackend\",\n    ],\n    \"DEFAULT_SCHEMA_CLASS\": 'drf_spectacular.openapi.AutoSchema',\n}\n\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'My Site Project API',\n    'DESCRIPTION': 'My site with shopapp and custom auth',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}\n\nROOT_URLCONF = \"mysite.urls\"\n\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",\n                \"django.contrib.messages.context_processors.messages\",\n            ],\n        },\n    },\n]\n\nWSGI_APPLICATION = \"mysite.wsgi.application\"\n\n\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\n\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n\n\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\n\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.UserAttributeSimilarityValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.MinimumLengthValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.CommonPasswordValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.NumericPasswordValidator\",\n    },\n]\n\n\n# Internationalization\n# https://docs.djangoproject.com/en/4.2/topics/i18n/\n\nLANGUAGE_CODE = \"en-us\"\n\nTIME_ZONE = \"UTC\"\n\nUSE_I18N = True\n\nUSE_TZ = True\n\nUSE_L10N = True\n\nLOCALE_PATHS = [\n    BASE_DIR / 'locale'\n]\n\nLANGUAGES = [\n    ('en', _('English')),\n    ('ru', _('Russian'))\n]\n\n\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\n\nSTATIC_URL = \"static/\"\n\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'uploads'\n\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\n\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n\nLOGIN_REDIRECT_URL = reverse_lazy(\"myauth:about-me\")\nLOGIN_URL = reverse_lazy(\"myauth:login\")\n\nLOGGING = {\n    'version': 1,\n    'filters': {\n        'require_debug_true': {\n            '()': 'django.utils.log.RequireDebugTrue',\n        },\n    },\n    'handlers': {\n        'console': {\n            'level': 'DEBUG',\n            'filters': ['require_debug_true'],\n            'class': 'logging.StreamHandler',\n        },\n    },\n    'loggers': {\n        'django.db.backends': {\n            'level': 'DEBUG',\n            'handlers': ['console'],\n        },\n    },\n}\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mysite/settings.py b/mysite/settings.py
+--- a/mysite/settings.py	(revision d983817c1b460331903eca8dc5c8c3a16ad14643)
++++ b/mysite/settings.py	(date 1693892353738)
+@@ -12,6 +12,7 @@
+ import logging
+ from pathlib import Path
+ 
++import debug_toolbar.middleware
+ import django.utils.log
+ from django.urls import reverse_lazy
+ from django.utils.translation import gettext_lazy as _
+@@ -50,6 +51,7 @@
+     'django_filters',
+     'drf_spectacular',
+     'blogapp.apps.BlogappConfig',
++    'debug_toolbar',
+ ]
+ 
+ MIDDLEWARE = [
+@@ -62,6 +64,7 @@
+     "django.contrib.admindocs.middleware.XViewMiddleware",
+     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+     "django.middleware.locale.LocaleMiddleware",
++    'debug_toolbar.middleware.DebugToolbarMiddleware',
+ 
+     "requestdataapp.middlewares.set_useragent_on_request_middleware",
+     "requestdataapp.middlewares.CountRequestsMiddleware",
+@@ -173,25 +176,63 @@
+ LOGIN_REDIRECT_URL = reverse_lazy("myauth:about-me")
+ LOGIN_URL = reverse_lazy("myauth:login")
+ 
++LOGFILE_NAME = BASE_DIR / "log.txt"
++LOGFILE_SIZE = 1 * 1024 * 1024
++LOGFILE_COUNT = 3
++
++
++# LOGGING = {
++#     'version': 1,
++#     'filters': {
++#         'require_debug_true': {
++#             '()': 'django.utils.log.RequireDebugTrue',
++#         },
++#     },
++#     'handlers': {
++#         'console': {
++#             'level': 'DEBUG',
++#             'filters': ['require_debug_true'],
++#             'class': 'logging.StreamHandler',
++#         },
++#     },
++#     'loggers': {
++#         'django.db.backends': {
++#             'level': 'DEBUG',
++#             'handlers': ['console'],
++#         },
++#     },
++# }
++
+ LOGGING = {
+     'version': 1,
+-    'filters': {
+-        'require_debug_true': {
+-            '()': 'django.utils.log.RequireDebugTrue',
+-        },
+-    },
++    'disable_existing_loggers': False,
+     'handlers': {
+         'console': {
+-            'level': 'DEBUG',
+-            'filters': ['require_debug_true'],
+             'class': 'logging.StreamHandler',
++            "formatter": "verbose",
+         },
++        'logfile': {
++            "class": 'logging.handlers.RotatingFileHandler',
++            "filename": LOGFILE_NAME,
++            "maxBytes": LOGFILE_SIZE,
++            "backupCount": LOGFILE_COUNT,
++            "formatter": "verbose",
++        }
+     },
+-    'loggers': {
+-        'django.db.backends': {
+-            'level': 'DEBUG',
+-            'handlers': ['console'],
++    'root': {
++        'level': 'INFO',
++        'handlers': [
++            'console',
++            'logfile',
++        ],
++    },
++    'formatters': {
++        "verbose": {
++            "format": "%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+         },
+     },
+ }
+ 
++INTERNAL_IPS =[
++    "127.0.0.1"
++]
+\ No newline at end of file
+Index: mysite/demo.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mysite/demo.py b/mysite/demo.py
+new file mode 100644
+--- /dev/null	(date 1693892878077)
++++ b/mysite/demo.py	(date 1693892878077)
+@@ -0,0 +1,17 @@
++from functools import cache
++
++
++@cache
++def factorial(n):
++    if n < 2:
++        return n
++    return n * factorial(n-1)
++
++
++def main():
++    print(factorial(5))
++    print(factorial(10))
++
++
++if __name__ == "__main__":
++    main()
+Index: shopapp/management/commands/selecting_fields.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from typing import Sequence\n\nfrom django.contrib.auth.models import User\nfrom django.core.management import BaseCommand\nfrom django.db import transaction\n\nfrom shopapp.models import Product, Order\n\n\nclass Command(BaseCommand):\n    \"\"\"Create order\"\"\"\n\n    def handle(self, *args, **options):\n        self.stdout.write(\"Start demo selecy fields\")\n        users_info = User.objects.values_list(\"username\", flat=True)\n        print(list(users_info))\n        for user_info in users_info:\n            print(user_info)\n\n        products_values = Product.objects.values(\"pk\", \"name\")\n        for p_values in products_values:\n            print(p_values)\n\n        self.stdout.write('Done')
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/shopapp/management/commands/selecting_fields.py b/shopapp/management/commands/selecting_fields.py
+--- a/shopapp/management/commands/selecting_fields.py	(revision d983817c1b460331903eca8dc5c8c3a16ad14643)
++++ b/shopapp/management/commands/selecting_fields.py	(date 1693891763287)
+@@ -11,7 +11,7 @@
+     """Create order"""
+ 
+     def handle(self, *args, **options):
+-        self.stdout.write("Start demo selecy fields")
++        self.stdout.write("Start demo.py selecy fields")
+         users_info = User.objects.values_list("username", flat=True)
+         print(list(users_info))
+         for user_info in users_info:
+Index: shopapp/management/commands/bulk_actions.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from django.contrib.auth.models import User\nfrom django.core.management import BaseCommand\nfrom django.db import transaction\n\nfrom shopapp.models import Product, Order\n\n\nclass Command(BaseCommand):\n    \"\"\"Create order\"\"\"\n\n    def handle(self, *args, **options):\n        self.stdout.write(\"Start demo bulk actions\")\n        # info = [\n        #     ('NoPhone 1', 199, 1),\n        #     ('NoPhone 2', 299, 1),\n        #     ('NoPhone 3', 399, 1),\n        # ]\n        # products = [\n        #     Product(name=name, price=price, created_by_id=id)\n        #     for name, price, id in info\n        # ]\n        res = Product.objects.filter(name__contains=\"NoPhone\").update(description='very nice phone, must buy')\n        print(res)\n        # for obj in res:\n        #     print(obj)\n\n        self.stdout.write('Done')
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/shopapp/management/commands/bulk_actions.py b/shopapp/management/commands/bulk_actions.py
+--- a/shopapp/management/commands/bulk_actions.py	(revision d983817c1b460331903eca8dc5c8c3a16ad14643)
++++ b/shopapp/management/commands/bulk_actions.py	(date 1693891763299)
+@@ -1,4 +1,4 @@
+-from django.contrib.auth.models import User
++`from django.contrib.auth.models import User
+ from django.core.management import BaseCommand
+ from django.db import transaction
+ 
+@@ -9,7 +9,7 @@
+     """Create order"""
+ 
+     def handle(self, *args, **options):
+-        self.stdout.write("Start demo bulk actions")
++        self.stdout.write("Start demo.py bulk actions")
+         # info = [
+         #     ('NoPhone 1', 199, 1),
+         #     ('NoPhone 2', 299, 1),
+@@ -18,7 +18,7 @@
+         # products = [
+         #     Product(name=name, price=price, created_by_id=id)
+         #     for name, price, id in info
+-        # ]
++        # ]`
+         res = Product.objects.filter(name__contains="NoPhone").update(description='very nice phone, must buy')
+         print(res)
+         # for obj in res:
+Index: shopapp/management/commands/agg.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\nfrom django.contrib.auth.models import User\nfrom django.core.management import BaseCommand\nfrom django.db.models import Avg, Min, Max, Sum, Count\n\nfrom shopapp.models import Product, Order\n\n\nclass Command(BaseCommand):\n    \"\"\"Create order\"\"\"\n\n    def handle(self, *args, **options):\n        self.stdout.write(\"Start demo aggregate\")\n\n        # result = Product.objects.aggregate(\n        #     Avg(\"price\"),\n        #     Max(\"price\"),\n        #     min_price=Min(\"price\"),\n        #     count=Count(\"id\"),\n        # )\n        # result_2 = Product.objects.filter(\n        #     name__contains=\"NoPhone\",\n        # ).aggregate(\n        #     Avg(\"price\"),\n        #     Max(\"price\"),\n        #     min_price=Min(\"price\"),\n        #     count=Count(\"id\"),\n        # )\n        # print(result)\n        # print((result_2))\n\n        orders = Order.objects.annotate(\n            total=Sum(\"products__price\", default=0),\n            products_count=Count('products')\n        )\n        for order in orders:\n            print(\n                f\"Order #{order.id} \"\n                f\"with {order.products_count} \"\n                f\"products worth {order.total}\"\n            )\n\n        self.stdout.write('Done')
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/shopapp/management/commands/agg.py b/shopapp/management/commands/agg.py
+--- a/shopapp/management/commands/agg.py	(revision d983817c1b460331903eca8dc5c8c3a16ad14643)
++++ b/shopapp/management/commands/agg.py	(date 1693891763323)
+@@ -10,7 +10,7 @@
+     """Create order"""
+ 
+     def handle(self, *args, **options):
+-        self.stdout.write("Start demo aggregate")
++        self.stdout.write("Start demo.py aggregate")
+ 
+         # result = Product.objects.aggregate(
+         #     Avg("price"),
+Index: mysite/urls.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\nURL configuration for mysite project.\n\nThe `urlpatterns` list routes URLs to views. For more information please see:\n    https://docs.djangoproject.com/en/4.2/topics/http/urls/\nExamples:\nFunction views\n    1. Add an import:  from my_app import views\n    2. Add a URL to urlpatterns:  path('', views.home, name='home')\nClass-based views\n    1. Add an import:  from other_app.views import Home\n    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')\nIncluding another URLconf\n    1. Import the include() function: from django.urls import include, path\n    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))\n\"\"\"\nfrom django.contrib import admin\nfrom django.urls import path, include\nfrom django.conf import settings\nfrom django.conf.urls.static import static\nfrom django.conf.urls.i18n import i18n_patterns\nfrom drf_spectacular.views import (\n    SpectacularAPIView,\n    SpectacularRedocView,\n    SpectacularSwaggerView,\n)\n\n\n\nurlpatterns = [\n    path(\"admin/doc/\", include('django.contrib.admindocs.urls')),\n    path(\"admin/\", admin.site.urls),\n    path(\"shop/\", include(\"shopapp.urls\")),\n    path(\"req/\", include(\"requestdataapp.urls\")),\n    path(\"accounts/\", include(\"myauth.urls\")),\n    path(\"admin/\", admin.site.urls),\n    path(\"api/schema/\", SpectacularAPIView.as_view(), name=\"schema\"),\n    path(\"api/schema/swagger/\", SpectacularSwaggerView.as_view(), name=\"swagger\"),\n    path(\"api/schema/redoc/\", SpectacularRedocView.as_view(), name=\"redoc\"),\n    path(\"api/\", include(\"myapiapp.urls\")),\n]\n\nurlpatterns += i18n_patterns(\n    path(\"admin/\", admin.site.urls),\n    path(\"shop/\", include(\"shopapp.urls\")),\n    # path(\"req/\", include(\"requestdataapp.urls\")),\n    path(\"accounts/\", include(\"myauth.urls\")),\n    path(\"blog/\", include(\"blogapp.urls\")),\n)\n\nif settings.DEBUG: #add ways to statics\n    urlpatterns.extend(\n        static(\n            settings.MEDIA_URL,\n            document_root=settings.MEDIA_ROOT\n        )\n    )
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mysite/urls.py b/mysite/urls.py
+--- a/mysite/urls.py	(revision d983817c1b460331903eca8dc5c8c3a16ad14643)
++++ b/mysite/urls.py	(date 1693892353730)
+@@ -49,9 +49,12 @@
+ )
+ 
+ if settings.DEBUG: #add ways to statics
+-    urlpatterns.extend(
+-        static(
+-            settings.MEDIA_URL,
+-            document_root=settings.MEDIA_ROOT
+-        )
++    # urlpatterns.extend(
++    #     static(
++    #         settings.MEDIA_URL,
++    #         document_root=settings.MEDIA_ROOT
++    #     )
++    # )
++    urlpatterns.append(
++        path("__debug__/", include("debug_toolbar.urls")),
+     )
+\ No newline at end of file

@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3722f940-e33a-4bc0-8893-622c22ed7d29" name="Changes" comment="lesson 16.1">
+      <change afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/mysite/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/management/commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/myapiapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/myapiapp/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/myauth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/myauth/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/myauth/management/commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/myauth/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/mysite/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/permissions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/permissions/mysite/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/permissions/mysite/myauth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/permissions/mysite/myauth/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/permissions/mysite/myauth/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/permissions/mysite/mysite/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/management/commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/queries/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/queries/mysite/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/queries/mysite/mysite/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/management/commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/requestdataapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/requestdataapp/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/shopapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/shopapp/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/shopapp/management/commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Auth/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/mysite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/mysite/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/mysite/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/mysite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/mysite/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/admin_mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/admin_mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/management/commands/create_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/management/commands/create_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/management/commands/create_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/management/commands/create_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/management/commands/update_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/management/commands/update_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/migrations/0003_product_archived.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/migrations/0003_product_archived.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/migrations/0004_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/migrations/0004_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/migrations/0005_order_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/migrations/0005_order_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/migrations/0006_order_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/migrations/0006_order_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/mysite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/templates/shopapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/templates/shopapp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/templates/shopapp/groups-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/templates/shopapp/groups-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/templates/shopapp/orders-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/templates/shopapp/orders-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/templates/shopapp/products-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/templates/shopapp/products-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/templates/shopapp/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/templates/shopapp/shop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/shopapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/mysite/textfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/textfile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CBV/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/management/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/templates/myauth/about-me.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/templates/myauth/about-me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/templates/myauth/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/templates/myauth/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/templates/myauth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/templates/myauth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/templates/myauth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/templates/myauth/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/myauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/mysite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/management/commands/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/mysite/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/mysite/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/mysite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/mysite/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp-fixtures.json" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp-fixtures.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/CBV/mysite/shopapp/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/admin_mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/admin_mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/fixtures/products-fixture.json" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/fixtures/products-fixture.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/management/commands/create_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/management/commands/create_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/management/commands/create_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/management/commands/create_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/management/commands/update_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/management/commands/update_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/migrations/0003_product_archived.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/migrations/0003_product_archived.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/migrations/0004_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/migrations/0004_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/migrations/0005_order_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/migrations/0005_order_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/migrations/0006_order_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/migrations/0006_order_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/migrations/0007_alter_product_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/migrations/0007_alter_product_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/migrations/0008_order_receipt.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/migrations/0008_order_receipt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/migrations/0009_product_preview.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/migrations/0009_product_preview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/migrations/0010_productimage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/migrations/0010_productimage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/templates/shopapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/templates/shopapp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/templates/shopapp/groups-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/templates/shopapp/groups-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/templates/shopapp/order_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/templates/shopapp/order_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/templates/shopapp/order_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/templates/shopapp/order_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/templates/shopapp/product_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/templates/shopapp/product_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/templates/shopapp/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/templates/shopapp/product_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/templates/shopapp/product_update_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/templates/shopapp/product_update_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/templates/shopapp/products-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/templates/shopapp/products-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/templates/shopapp/products-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/templates/shopapp/products-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/templates/shopapp/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/templates/shopapp/shop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/shopapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/uploads/orders/receipts/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/uploads/orders/receipts/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/uploads/orders/receipts/requirements_QBDeL8J.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/uploads/orders/receipts/requirements_QBDeL8J.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/uploads/products/product_2/images/desktop-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/uploads/products/product_2/images/desktop-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/uploads/products/product_2/images/desktop-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/uploads/products/product_2/images/desktop-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/uploads/products/product_2/preview/desktop-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/uploads/products/product_2/preview/desktop-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/uploads/products/product_3/images/smartphone-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/uploads/products/product_3/images/smartphone-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/uploads/products/product_3/images/smartphone-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/uploads/products/product_3/images/smartphone-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/mysite/uploads/products/product_3/preview/smartphone-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/uploads/products/product_3/preview/smartphone-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRF/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myapiapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myapiapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myapiapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myapiapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myapiapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myapiapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myapiapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myapiapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myapiapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myapiapp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myapiapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myapiapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myapiapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myapiapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myapiapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myapiapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/myauth/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/mysite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/templates/myauth/about-me.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/templates/myauth/about-me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/templates/myauth/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/templates/myauth/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/templates/myauth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/templates/myauth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/templates/myauth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/templates/myauth/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/myauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/mysite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/mysite/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/mysite/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/mysite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/mysite/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp-fixtures.json" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp-fixtures.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/management/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/admin_mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/admin_mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/fixtures/products-fixture.json" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/fixtures/products-fixture.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/management/commands/create_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/management/commands/create_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/management/commands/create_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/management/commands/create_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/management/commands/update_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/management/commands/update_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/migrations/0003_product_archived.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/migrations/0003_product_archived.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/migrations/0004_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/migrations/0004_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/migrations/0005_order_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/migrations/0005_order_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/migrations/0006_order_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/migrations/0006_order_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/migrations/0007_alter_product_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/migrations/0007_alter_product_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/migrations/0008_order_receipt.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/migrations/0008_order_receipt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/migrations/0009_product_preview.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/migrations/0009_product_preview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/migrations/0010_productimage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/migrations/0010_productimage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/management/commands/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/templates/shopapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/templates/shopapp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/templates/shopapp/groups-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/templates/shopapp/groups-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/templates/shopapp/order_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/templates/shopapp/order_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/templates/shopapp/order_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/templates/shopapp/order_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/templates/shopapp/product_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/templates/shopapp/product_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/templates/shopapp/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/templates/shopapp/product_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/templates/shopapp/product_update_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/templates/shopapp/product_update_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/templates/shopapp/products-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/templates/shopapp/products-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/templates/shopapp/products-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/templates/shopapp/products-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/templates/shopapp/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/templates/shopapp/shop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/shopapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/uploads/orders/receipts/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/uploads/orders/receipts/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/uploads/orders/receipts/requirements_QBDeL8J.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/uploads/orders/receipts/requirements_QBDeL8J.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/uploads/products/product_2/images/desktop-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/uploads/products/product_2/images/desktop-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/uploads/products/product_2/images/desktop-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/uploads/products/product_2/images/desktop-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/uploads/products/product_2/preview/desktop-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/uploads/products/product_2/preview/desktop-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/uploads/products/product_3/images/smartphone-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/uploads/products/product_3/images/smartphone-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/uploads/products/product_3/images/smartphone-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/uploads/products/product_3/images/smartphone-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/uploads/products/product_3/preview/smartphone-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/uploads/products/product_3/preview/smartphone-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/mysite/uploads/products/product_4/preview/headphones.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/uploads/products/product_4/preview/headphones.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/DRF/mysite/shopapp/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/templates/myauth/about-me.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/templates/myauth/about-me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/templates/myauth/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/templates/myauth/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/templates/myauth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/templates/myauth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/templates/myauth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/templates/myauth/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/myauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/mysite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/mysite/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/mysite/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/mysite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/mysite/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myapiapp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/admin_mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/admin_mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/management/commands/create_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/management/commands/create_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/management/commands/create_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/management/commands/create_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/management/commands/update_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/management/commands/update_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/migrations/0003_product_archived.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/migrations/0003_product_archived.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/migrations/0004_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/migrations/0004_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/migrations/0005_order_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/migrations/0005_order_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/migrations/0006_order_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/migrations/0006_order_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/migrations/0007_alter_product_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/migrations/0007_alter_product_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myapiapp/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/templates/shopapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/templates/shopapp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/templates/shopapp/groups-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/templates/shopapp/groups-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/templates/shopapp/order_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/templates/shopapp/order_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/templates/shopapp/order_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/templates/shopapp/order_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/templates/shopapp/product_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/templates/shopapp/product_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/templates/shopapp/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/templates/shopapp/product_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/templates/shopapp/product_update_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/templates/shopapp/product_update_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/templates/shopapp/products-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/templates/shopapp/products-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/templates/shopapp/products-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/templates/shopapp/products-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/templates/shopapp/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/templates/shopapp/shop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/mysite/shopapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/examples/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/examples/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/examples/e1.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/examples/e1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/examples/e2.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/examples/e2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/examples/e3.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/examples/e3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/icons/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/icons/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/icons/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/icons/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/icons/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/icons/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/icons/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/icons/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/icons/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/icons/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/images/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/images/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/images/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/images/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/social-nets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/social-nets/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/social-nets/fb.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/social-nets/fb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/social-nets/inst.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/social-nets/inst.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/social-nets/telegram.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/social-nets/telegram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/social-nets/vk.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/social-nets/vk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/img/social-nets/you.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/img/social-nets/you.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/lesson_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/HTML_CSS/lesson_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_06_Forms/mysite/shopapp/management/commands/create_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/M_06_Forms/mysite/shopapp/management/commands/create_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_06_Forms/mysite/shopapp/management/commands/create_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/M_06_Forms/mysite/shopapp/management/commands/create_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_06_Forms/mysite/shopapp/management/commands/update_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/M_06_Forms/mysite/shopapp/management/commands/update_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/myauth/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/templates/myauth/about-me.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/templates/myauth/about-me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/templates/myauth/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/templates/myauth/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/templates/myauth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/templates/myauth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/templates/myauth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/templates/myauth/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/myauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/mysite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/mysite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/mysite/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/mysite/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/mysite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/mysite/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/admin_mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/admin_mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/management/commands/create_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/management/commands/create_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/management/commands/create_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/management/commands/create_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/management/commands/update_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/management/commands/update_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/migrations/0003_product_archived.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/migrations/0003_product_archived.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/migrations/0004_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/migrations/0004_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/migrations/0005_order_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/migrations/0005_order_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/migrations/0006_order_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/migrations/0006_order_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/migrations/0007_alter_product_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/migrations/0007_alter_product_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/management/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/templates/shopapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/templates/shopapp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/templates/shopapp/groups-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/templates/shopapp/groups-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/templates/shopapp/order_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/templates/shopapp/order_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/templates/shopapp/order_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/templates/shopapp/order_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/templates/shopapp/product_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/templates/shopapp/product_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/templates/shopapp/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/templates/shopapp/product_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/templates/shopapp/product_update_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/templates/shopapp/product_update_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/templates/shopapp/products-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/templates/shopapp/products-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/templates/shopapp/products-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/templates/shopapp/products-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/templates/shopapp/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/templates/shopapp/shop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/mysite/shopapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/management/commands/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/management/commands/create_article.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/management/commands/create_article.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/management/commands/create_authors.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/management/commands/create_authors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/management/commands/create_category_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/management/commands/create_category_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Docs/mysite/shopapp/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/blogapp/article_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/templates/blogapp/article_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/blogapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/templates/blogapp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/templates/myauth/about-me.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/templates/myauth/about-me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/templates/myauth/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/templates/myauth/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/templates/myauth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/templates/myauth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/templates/myauth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/templates/myauth/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/myauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/myauth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/mysite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/mysite/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/mysite/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/mysite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/mysite/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp-fixtures.json" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp-fixtures.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/myauth/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/admin_mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/admin_mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/fixtures/products-fixture.json" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/fixtures/products-fixture.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/management/commands/create_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/management/commands/create_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/management/commands/create_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/management/commands/create_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/management/commands/update_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/management/commands/update_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/migrations/0003_product_archived.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/migrations/0003_product_archived.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/migrations/0004_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/migrations/0004_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/migrations/0005_order_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/migrations/0005_order_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/migrations/0006_order_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/migrations/0006_order_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/migrations/0007_alter_product_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/migrations/0007_alter_product_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/migrations/0008_order_receipt.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/migrations/0008_order_receipt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/migrations/0009_product_preview.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/migrations/0009_product_preview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/migrations/0010_productimage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/migrations/0010_productimage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/mysite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/templates/shopapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/templates/shopapp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/templates/shopapp/groups-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/templates/shopapp/groups-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/templates/shopapp/order_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/templates/shopapp/order_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/templates/shopapp/order_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/templates/shopapp/order_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/templates/shopapp/product_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/templates/shopapp/product_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/templates/shopapp/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/templates/shopapp/product_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/templates/shopapp/product_update_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/templates/shopapp/product_update_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/templates/shopapp/products-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/templates/shopapp/products-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/templates/shopapp/products-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/templates/shopapp/products-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/templates/shopapp/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/templates/shopapp/shop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/shopapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/shopapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/uploads/orders/receipts/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/uploads/orders/receipts/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/uploads/orders/receipts/requirements_QBDeL8J.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/uploads/orders/receipts/requirements_QBDeL8J.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/uploads/products/product_2/images/desktop-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/uploads/products/product_2/images/desktop-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/uploads/products/product_2/images/desktop-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/uploads/products/product_2/images/desktop-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/uploads/products/product_2/preview/desktop-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/uploads/products/product_2/preview/desktop-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/uploads/products/product_3/images/smartphone-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/uploads/products/product_3/images/smartphone-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/uploads/products/product_3/images/smartphone-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/uploads/products/product_3/images/smartphone-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/mysite/uploads/products/product_3/preview/smartphone-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/uploads/products/product_3/preview/smartphone-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/i18n_l10n/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locale/en/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/locale/en/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/mysite/shopapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/logging/mysite/shopapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/mysite/shopapp/management/commands/agg.py" beforeDir="false" afterPath="$PROJECT_DIR$/logging/mysite/shopapp/management/commands/agg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/mysite/shopapp/management/commands/bulk_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/logging/mysite/shopapp/management/commands/bulk_actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/mysite/shopapp/management/commands/create_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/logging/mysite/shopapp/management/commands/create_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/mysite/shopapp/management/commands/create_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/logging/mysite/shopapp/management/commands/create_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/mysite/shopapp/management/commands/selecting_fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/logging/mysite/shopapp/management/commands/selecting_fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/mysite/shopapp/management/commands/update_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/logging/mysite/shopapp/management/commands/update_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/mysite/shopapp/migrations/0009_product_preview.py" beforeDir="false" afterPath="$PROJECT_DIR$/logging/mysite/shopapp/migrations/0009_product_preview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/mysite/shopapp/migrations/0010_productimage.py" beforeDir="false" afterPath="$PROJECT_DIR$/logging/mysite/shopapp/migrations/0010_productimage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/mysite/shopapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/logging/mysite/shopapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapiapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapiapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myapiapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapiapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myapiapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapiapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/management/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapiapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myapiapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapiapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myapiapp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapiapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myapiapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapiapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myapiapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapiapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myapiapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/management/commands/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/management/commands/bind_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/management/commands/bind_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/migrations/0002_profile_avatar.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/migrations/0002_profile_avatar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Files/mysite/shopapp/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/templates/myauth/about-me.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/templates/myauth/about-me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/templates/myauth/accounts.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/templates/myauth/accounts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/templates/myauth/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/templates/myauth/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/templates/myauth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/templates/myauth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/templates/myauth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/templates/myauth/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/templates/myauth/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/templates/myauth/user-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/myauth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/myauth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/myauth/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/myauth/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/myauth/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/myauth/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/myauth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/mysite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/myauth/templates/myauth/about-me.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/myauth/templates/myauth/about-me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/myauth/templates/myauth/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/myauth/templates/myauth/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/myauth/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/myauth/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/myauth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/myauth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/myauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/myauth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/mysite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/mysite/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/mysite/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/mysite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/mysite/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/myauth/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/admin_mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/admin_mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/management/commands/create_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/management/commands/create_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/management/commands/create_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/management/commands/create_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/management/commands/update_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/management/commands/update_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/migrations/0003_product_archived.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/migrations/0003_product_archived.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/migrations/0004_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/migrations/0004_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/migrations/0005_order_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/migrations/0005_order_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/migrations/0006_order_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/migrations/0006_order_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/migrations/0007_alter_product_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/migrations/0007_alter_product_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/mysite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/templates/shopapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/templates/shopapp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/templates/shopapp/groups-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/templates/shopapp/groups-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/templates/shopapp/order_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/templates/shopapp/order_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/templates/shopapp/order_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/templates/shopapp/order_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/templates/shopapp/product_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/templates/shopapp/product_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/templates/shopapp/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/templates/shopapp/product_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/templates/shopapp/product_update_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/templates/shopapp/product_update_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/templates/shopapp/products-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/templates/shopapp/products-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/templates/shopapp/products-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/templates/shopapp/products-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/templates/shopapp/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/templates/shopapp/shop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/mysite/shopapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/mysite/shopapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permissions/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/permissions/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/management/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/templates/myauth/about-me.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/templates/myauth/about-me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/templates/myauth/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/templates/myauth/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/templates/myauth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/templates/myauth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/templates/myauth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/templates/myauth/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/myauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/myauth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/mysite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/management/commands/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/mysite/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/mysite/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/mysite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/mysite/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp-fixtures.json" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp-fixtures.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/admin_mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/admin_mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/fixtures/products-fixture.json" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/fixtures/products-fixture.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/management/commands/create_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/management/commands/create_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/management/commands/create_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/management/commands/create_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/management/commands/update_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/Testing/mysite/shopapp/management/commands/update_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/migrations/0003_product_archived.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/migrations/0003_product_archived.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/migrations/0004_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/migrations/0004_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/migrations/0005_order_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/migrations/0005_order_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/migrations/0006_order_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/migrations/0006_order_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/migrations/0007_alter_product_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/migrations/0007_alter_product_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/migrations/0008_order_receipt.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/migrations/0008_order_receipt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/migrations/0009_product_preview.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/migrations/0009_product_preview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/migrations/0010_productimage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/migrations/0010_productimage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/templates/shopapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/templates/shopapp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/templates/shopapp/groups-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/templates/shopapp/groups-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/templates/shopapp/order_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/templates/shopapp/order_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/templates/shopapp/order_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/templates/shopapp/order_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/templates/shopapp/product_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/templates/shopapp/product_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/templates/shopapp/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/templates/shopapp/product_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/templates/shopapp/product_update_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/templates/shopapp/product_update_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/templates/shopapp/products-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/templates/shopapp/products-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/templates/shopapp/products-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/templates/shopapp/products-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/templates/shopapp/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/templates/shopapp/shop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/shopapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/shopapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/uploads/products/product_2/images/desktop-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/uploads/products/product_2/images/desktop-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/uploads/products/product_2/images/desktop-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/uploads/products/product_2/images/desktop-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/uploads/products/product_2/preview/desktop-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/uploads/products/product_2/preview/desktop-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/uploads/products/product_3/images/smartphone-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/uploads/products/product_3/images/smartphone-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/uploads/products/product_3/images/smartphone-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/uploads/products/product_3/images/smartphone-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/uploads/products/product_3/preview/smartphone-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/uploads/products/product_3/preview/smartphone-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/mysite/uploads/products/product_4/preview/headphones.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/mysite/uploads/products/product_4/preview/headphones.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/queries/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quieries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/quieries.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/management/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/management/commands/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/templates/requestdataapp/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/templates/requestdataapp/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/templates/requestdataapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/templates/requestdataapp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/templates/requestdataapp/file-upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/templates/requestdataapp/file-upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/templates/requestdataapp/request-query-params.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/templates/requestdataapp/request-query-params.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/templates/requestdataapp/user-bio-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/templates/requestdataapp/user-bio-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requestdataapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/requestdataapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/blogapp/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/admin_mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/admin_mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/fixtures/groups-fixture.json" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/fixtures/groups-fixture.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/fixtures/orders-fixture.json" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/fixtures/orders-fixture.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/fixtures/products-fixture.json" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/fixtures/products-fixture.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/fixtures/users-fixture.json" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/fixtures/users-fixture.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/management/commands/agg.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/management/commands/agg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/management/commands/bulk_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/management/commands/bulk_actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/management/commands/create_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/management/commands/create_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/management/commands/create_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/management/commands/create_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/management/commands/selecting_fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/management/commands/selecting_fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/management/commands/update_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/management/commands/update_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0002_product_created_at_product_discount_product_price.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0003_product_archived.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0003_product_archived.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0004_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0004_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0005_order_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0005_order_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0006_order_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0006_order_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0007_alter_product_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0007_alter_product_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0008_product_created_by.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0008_product_created_by.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0009_alter_product_description.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0009_alter_product_description.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0010_alter_product_description.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0010_alter_product_description.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0011_order_receipt.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0011_order_receipt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0012_product_preview.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0012_product_preview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0013_productimage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0013_productimage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/0014_alter_order_options_alter_product_options_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/migrations/0014_alter_order_options_alter_product_options_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/i18n_l10n/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/groups-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/groups-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/order_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/order_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/order_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/order_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/order_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/order_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/order_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/order_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/order_update_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/order_update_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/product_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/product_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/product_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/product_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/product_update_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/product_update_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/products-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/products-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/products-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/products-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/templates/shopapp/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/shop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/2_FF8zZQr.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/2_FF8zZQr.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/2_HGSCeuU.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/2_HGSCeuU.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/2_oouWyZb.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/2_oouWyZb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/2_plbpgox.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/2_plbpgox.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/2_rVSB1It.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/2_rVSB1It.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/4_3yn1nII.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/4_3yn1nII.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/e1.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/e1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man_5K6zPdh.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man_5K6zPdh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man_9ulqHRn.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man_9ulqHRn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man_VMioUwJ.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man_VMioUwJ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man_ZmTbRVP.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man_ZmTbRVP.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man_fibQKYp.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man_fibQKYp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man_fjvdVmz.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man_fjvdVmz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man_jXBrnBo.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man_jXBrnBo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man_mleerqE.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man_mleerqE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man_qRX8H7C.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man_qRX8H7C.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man_t8MJTHk.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man_t8MJTHk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man_yIty2Pu.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man_yIty2Pu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_1/man_ywXqgPV.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_1/man_ywXqgPV.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_11/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_11/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_12/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_12/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_13/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_13/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_14/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_14/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_15/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_15/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_15/man_egZfXny.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_15/man_egZfXny.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_16/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_16/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_17/e1.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_17/e1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_17/e1_21aig0o.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_17/e1_21aig0o.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_17/e1_GfiAMvJ.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_17/e1_GfiAMvJ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_17/e3.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_17/e3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_17/e3_Gve5A0y.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_17/e3_Gve5A0y.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_2/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_2/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_2/inst.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_2/inst.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_2/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_2/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_2/vk.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_2/vk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_3/e3.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_3/e3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_4/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_4/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/myauth/avatars/user_9/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/myauth/avatars/user_9/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/orders/receipts/man.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/orders/receipts/man.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/products/product_1/images/inst.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/products/product_1/images/inst.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/products/product_1/images/telegram.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/products/product_1/images/telegram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/products/product_1/images/vk.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/products/product_1/images/vk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/products/product_1/preview/you.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/products/product_1/preview/you.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/products/product_2/preview/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/products/product_2/preview/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/products/product_7/images/e1.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/products/product_7/images/e1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/products/product_7/images/e2.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/products/product_7/images/e2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/products/product_7/images/e3.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/products/product_7/images/e3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/products/product_&lt;built-in function id&gt;/preview/e1.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/products/product_&lt;built-in function id&gt;/preview/e1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/products/product_&lt;built-in function id&gt;/preview/e2.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/products/product_&lt;built-in function id&gt;/preview/e2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/products/product_&lt;built-in function id&gt;/preview/e3.png" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/uploads/products/product_&lt;built-in function id&gt;/preview/e3.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lesson_6" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2TcdXLMnIFJZSeMLGnx0AbokMAi" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ilmi/PycharmProjects/python_django/shopapp/templates/shopapp&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;copyright.profiles&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shopapp/templates/shopapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mysite" />
+      <recent name="$PROJECT_DIR$/my" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/mysite1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_django" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysite" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysite/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.demo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3722f940-e33a-4bc0-8893-622c22ed7d29" name="Changes" comment="" />
+      <created>1691346346819</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691346346819</updated>
+    </task>
+    <task id="LOCAL-00001" summary="lesson 3.1">
+      <option name="closed" value="true" />
+      <created>1691357534722</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691357534722</updated>
+    </task>
+    <task id="LOCAL-00002" summary="lesson 3.2">
+      <option name="closed" value="true" />
+      <created>1691360396926</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691360396926</updated>
+    </task>
+    <task id="LOCAL-00003" summary="lesson 3.3">
+      <option name="closed" value="true" />
+      <created>1691363612086</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691363612086</updated>
+    </task>
+    <task id="LOCAL-00004" summary="lesson 4.1">
+      <option name="closed" value="true" />
+      <created>1691411495530</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691411495530</updated>
+    </task>
+    <task id="LOCAL-00005" summary="lesson 4.2">
+      <option name="closed" value="true" />
+      <created>1691421671046</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691421671046</updated>
+    </task>
+    <task id="LOCAL-00006" summary="lesson 5.2">
+      <option name="closed" value="true" />
+      <created>1691517928950</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691517928950</updated>
+    </task>
+    <task id="LOCAL-00007" summary="lesson 5.2">
+      <option name="closed" value="true" />
+      <created>1691526790137</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691526790137</updated>
+    </task>
+    <task id="LOCAL-00008" summary="lesson 5.3">
+      <option name="closed" value="true" />
+      <created>1691588057825</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691588057825</updated>
+    </task>
+    <task id="LOCAL-00009" summary="lesson 6.1">
+      <option name="closed" value="true" />
+      <created>1691667275711</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1691667275711</updated>
+    </task>
+    <task id="LOCAL-00010" summary="lesson 6.3">
+      <option name="closed" value="true" />
+      <created>1691685310568</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1691685310568</updated>
+    </task>
+    <task id="LOCAL-00011" summary="lesson 6.3">
+      <option name="closed" value="true" />
+      <created>1691686022669</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1691686022669</updated>
+    </task>
+    <task id="LOCAL-00012" summary="lesson 6.2">
+      <option name="closed" value="true" />
+      <created>1691689881561</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1691689881561</updated>
+    </task>
+    <task id="LOCAL-00013" summary="lesson 6.3">
+      <option name="closed" value="true" />
+      <created>1691693726851</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1691693726851</updated>
+    </task>
+    <task id="LOCAL-00014" summary="lesson 6.4">
+      <option name="closed" value="true" />
+      <created>1691694316323</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1691694316323</updated>
+    </task>
+    <task id="LOCAL-00015" summary="lesson 6.5">
+      <option name="closed" value="true" />
+      <created>1691920492093</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1691920492093</updated>
+    </task>
+    <task id="LOCAL-00016" summary="lesson 9.1">
+      <option name="closed" value="true" />
+      <created>1692190335775</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1692190335775</updated>
+    </task>
+    <task id="LOCAL-00017" summary="lesson 9.2">
+      <option name="closed" value="true" />
+      <created>1692191318515</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1692191318515</updated>
+    </task>
+    <task id="LOCAL-00018" summary="lesson 10.1">
+      <option name="closed" value="true" />
+      <created>1692283216194</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1692283216194</updated>
+    </task>
+    <task id="LOCAL-00019" summary="lesson 10.2">
+      <option name="closed" value="true" />
+      <created>1692283467018</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1692283467018</updated>
+    </task>
+    <task id="LOCAL-00020" summary="lesson 11.1">
+      <option name="closed" value="true" />
+      <created>1692302938151</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1692302938151</updated>
+    </task>
+    <task id="LOCAL-00021" summary="lesson 11.2">
+      <option name="closed" value="true" />
+      <created>1692452628989</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1692452628989</updated>
+    </task>
+    <task id="LOCAL-00022" summary="lesson 11.3">
+      <option name="closed" value="true" />
+      <created>1692561216013</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1692561216013</updated>
+    </task>
+    <task id="LOCAL-00023" summary="lesson 12.1">
+      <option name="closed" value="true" />
+      <created>1692650424977</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1692650424977</updated>
+    </task>
+    <task id="LOCAL-00024" summary="lesson 12.2">
+      <option name="closed" value="true" />
+      <created>1692685932964</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1692685932964</updated>
+    </task>
+    <task id="LOCAL-00025" summary="lesson 12.3">
+      <option name="closed" value="true" />
+      <created>1692885018519</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1692885018519</updated>
+    </task>
+    <task id="LOCAL-00026" summary="lesson 13.1">
+      <option name="closed" value="true" />
+      <created>1693131337604</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1693131337604</updated>
+    </task>
+    <task id="LOCAL-00027" summary="lesson 13.2">
+      <option name="closed" value="true" />
+      <created>1693134358207</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1693134358207</updated>
+    </task>
+    <task id="LOCAL-00028" summary="lesson 14.1">
+      <option name="closed" value="true" />
+      <created>1693284513830</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1693284513830</updated>
+    </task>
+    <task id="LOCAL-00029" summary="lesson 14.2">
+      <option name="closed" value="true" />
+      <created>1693293105466</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1693293105467</updated>
+    </task>
+    <task id="LOCAL-00030" summary="lesson 15.1">
+      <option name="closed" value="true" />
+      <created>1693383547709</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1693383547709</updated>
+    </task>
+    <task id="LOCAL-00031" summary="lesson 16.1">
+      <option name="closed" value="true" />
+      <created>1693834800093</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1693834800093</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lesson 4.1" />
+    <MESSAGE value="lesson 4.2" />
+    <MESSAGE value="lesson 5.2" />
+    <MESSAGE value="lesson 5.3" />
+    <MESSAGE value="lesson 6.1" />
+    <MESSAGE value="lesson 6.2" />
+    <MESSAGE value="lesson 6.3" />
+    <MESSAGE value="lesson 6.4" />
+    <MESSAGE value="lesson 6.5" />
+    <MESSAGE value="lesson 9.1" />
+    <MESSAGE value="lesson 9.2" />
+    <MESSAGE value="lesson 10.1" />
+    <MESSAGE value="lesson 10.2" />
+    <MESSAGE value="lesson 11.1" />
+    <MESSAGE value="lesson 11.2" />
+    <MESSAGE value="lesson 11.3" />
+    <MESSAGE value="lesson 12.1" />
+    <MESSAGE value="lesson 12.2" />
+    <MESSAGE value="lesson 12.3" />
+    <MESSAGE value="lesson 13.1" />
+    <MESSAGE value="lesson 13.2" />
+    <MESSAGE value="lesson 14.1" />
+    <MESSAGE value="lesson 14.2" />
+    <MESSAGE value="lesson 15.1" />
+    <MESSAGE value="lesson 16.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 16.1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mysite/mysite/mysite/urls.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -2,7 +2,7 @@
 from django.core.management import BaseCommand
 from django.db.models import Avg, Max, Min, Count, Sum
 
-from shopapp.models import Product, Order
+from mysite.shopapp import Product, Order
 
 
 class Command(BaseCommand):
