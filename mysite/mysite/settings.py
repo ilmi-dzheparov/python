@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import logging
 from pathlib import Path
 
+import debug_toolbar.middleware
 import django.utils.log
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
@@ -30,6 +31,10 @@ SECRET_KEY = "django-insecure-gb*am(6_#z_9jgjw)201nnhm3m9r8@7e&m5d@m@)3v4gu=u-m1
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
 
 
 # Application definition
@@ -50,6 +55,7 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_spectacular',
     'blogapp.apps.BlogappConfig',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -62,6 +68,8 @@ MIDDLEWARE = [
     "django.contrib.admindocs.middleware.XViewMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.locale.LocaleMiddleware",
+
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 
     "requestdataapp.middlewares.set_useragent_on_request_middleware",
     "requestdataapp.middlewares.CountRequestsMiddleware",
