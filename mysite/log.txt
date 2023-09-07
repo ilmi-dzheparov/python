@@ -354,3 +354,6 @@ django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' ap
 2023-09-07 18:02:07,891 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/blogapp/views.py changed, reloading.
 2023-09-07 18:02:08,780 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2023-09-07 18:09:25,560 [WARNING] django.request: Not Found: /favicon.ico
+2023-09-07 18:49:29,516 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 18:51:58,560 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 18:52:02,521 [WARNING] django.request: Not Found: /
