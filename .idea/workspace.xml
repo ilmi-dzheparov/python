@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3722f940-e33a-4bc0-8893-622c22ed7d29" name="Changes" comment="lesson 18.3">
-      <change afterPath="$PROJECT_DIR$/mysite/shopapp/sitemap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/orders_changelist.html" afterDir="false" />
+    <list default="true" id="3722f940-e33a-4bc0-8893-622c22ed7d29" name="Changes" comment="lesson 18.4">
+      <change afterPath="$PROJECT_DIR$/orders.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/sitemaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/sitemaps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/shopapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/shopapp/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/shopapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/shopapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/shopapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -405,7 +400,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694122330122</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="lesson 18.4">
+      <option name="closed" value="true" />
+      <created>1694127138098</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1694127138098</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,7 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson 6.3" />
     <MESSAGE value="lesson 6.4" />
     <MESSAGE value="lesson 6.5" />
     <MESSAGE value="lesson 9.1" />
@@ -457,6 +459,7 @@
     <MESSAGE value="lesson 18.1" />
     <MESSAGE value="lesson 18.2" />
     <MESSAGE value="lesson 18.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 18.3" />
+    <MESSAGE value="lesson 18.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 18.4" />
   </component>
 </project>

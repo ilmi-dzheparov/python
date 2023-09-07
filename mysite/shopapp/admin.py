@@ -6,7 +6,7 @@ from django.urls import path
 
 from shopapp.models import Product, Order, ProductImage
 from .admin_mixins import ExportAsCSVMixin
-from .common import save_csv_products
+from .common import save_csv_products, save_csv_orders
 from .forms import CSVImportForm
 
 
@@ -113,7 +113,7 @@ class ProductInline(admin.StackedInline):
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    change_list_template = "shopapp/products_changelist.html"
+    change_list_template = "shopapp/orders_changelist.html"
     list_display = "delivery_address", "promocode", "created_at", "user_verbose"
     inlines = [
         ProductInline,
@@ -127,3 +127,35 @@ class OrderAdmin(admin.ModelAdmin):
 
     def user_verbose(self, obj: Order) -> str:
         return obj.user.first_name or obj.user.name
+
+    def import_csv(self, request: HttpRequest) -> HttpResponse:
+        if request.method == "GET":
+            form = CSVImportForm()
+            context = {
+                "form": form,
+            }
+            return render(request, "admin/csv_form.html", context)
+        form = CSVImportForm(request.POST, request.FILES)
+        if not form.is_valid():
+            context = {
+                "form": form,
+            }
+            return render(request, "admin/csv_form.html", context, status=400)
+        save_csv_orders(
+            file=form.files["csv_file"].file,
+            encoding=request.encoding,
+        )
+
+        self.message_user(request, "Data from CSV was imported")
+        return redirect("..")
+
+    def get_urls(self):
+        urls = super().get_urls()
+        new_urls = [
+            path(
+                "import-orders-csv/",
+                self.import_csv,
+                name="import_orders_csv",
+            ),
+        ]
+        return new_urls + urls
