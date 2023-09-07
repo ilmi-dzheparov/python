@@ -17,6 +17,7 @@ from .views import (
     OrdersDataExportView,
     ProductViewSet,
     OrderViewSet,
+    LatestProductsFeed,
     # create_order,
 )
 
@@ -36,6 +37,7 @@ urlpatterns = [
     path(
         "products/<int:pk>/update/", ProductUpdateView.as_view(), name="product_update"
     ),
+    path("products/latest/feed/", LatestProductsFeed(), name="products_feed"),
     path(
         "products/<int:pk>/delete/", ProductDeleteView.as_view(), name="product_delete"
     ),

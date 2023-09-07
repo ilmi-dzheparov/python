@@ -113,6 +113,7 @@ class ProductInline(admin.StackedInline):
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
+    change_list_template = "shopapp/products_changelist.html"
     list_display = "delivery_address", "promocode", "created_at", "user_verbose"
     inlines = [
         ProductInline,

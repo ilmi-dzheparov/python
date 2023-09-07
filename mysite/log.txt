@@ -357,3 +357,15 @@ django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' ap
 2023-09-07 18:49:29,516 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2023-09-07 18:51:58,560 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2023-09-07 18:52:02,521 [WARNING] django.request: Not Found: /
+2023-09-07 21:44:06,746 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 21:44:14,069 [WARNING] django.request: Not Found: /
+2023-09-07 21:47:05,064 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/shopapp/models.py changed, reloading.
+2023-09-07 21:47:05,652 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 22:01:41,371 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/mysite/sitemaps.py changed, reloading.
+2023-09-07 22:01:42,634 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 22:16:01,644 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/shopapp/urls.py changed, reloading.
+2023-09-07 22:16:02,730 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 22:39:33,734 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/shopapp/common.py changed, reloading.
+2023-09-07 22:39:35,458 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 22:47:31,020 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/shopapp/admin.py changed, reloading.
+2023-09-07 22:47:31,911 [INFO] django.utils.autoreload: Watching for file changes with StatReloader

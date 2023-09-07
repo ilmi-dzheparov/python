@@ -16,6 +16,7 @@ from django.http import HttpResponse, HttpRequest, HttpResponseRedirect, JsonRes
 from django.shortcuts import render, redirect, reverse
 from django.urls import reverse_lazy
 from django.views import View
+from django.contrib.syndication.views import Feed
 from django.views.generic import (
     TemplateView,
     ListView,
@@ -37,7 +38,7 @@ from rest_framework.response import Response
 from rest_framework.parsers import MultiPartParser
 from rest_framework.decorators import action
 from .serializers import ProductSerializer, OrderSerializer
-from .common import save_csv_products
+from .common import save_csv_products, save_csv_orders
 
 from csv import DictWriter
 
@@ -392,3 +393,21 @@ class OrdersDataExportView(StaffRequiredMixin, View):
             for order in orders
         ]
         return JsonResponse({"orders": orders_data})
+
+
+class LatestProductsFeed(Feed):
+    title = "Shop products (latest)"
+    description = "Updates on changes and addition products"
+    link = reverse_lazy("shopapp:products_list")
+
+    def items(self):
+        return (
+            Product.objects
+            .order_by("-created_at")[:5]
+        )
+
+    def item_title(self, item: Product):
+        return item.name
+
+    def item_description(self, item: Product):
+        return item.description[:200]
