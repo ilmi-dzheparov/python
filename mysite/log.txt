@@ -265,3 +265,92 @@ django.db.utils.IntegrityError: NOT NULL constraint failed: shopapp_product.crea
 2023-09-07 17:16:25,135 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2023-09-07 17:16:31,727 [WARNING] django.request: Method Not Allowed: /shop/api/products/upload_csv/
 2023-09-07 17:19:06,685 [WARNING] django.request: Method Not Allowed: /shop/api/products/upload_csv/
+2023-09-07 17:35:33,381 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/blogapp/admin.py changed, reloading.
+2023-09-07 17:35:34,317 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 17:38:54,799 [WARNING] django.request: Not Found: /blodapp
+2023-09-07 17:39:03,037 [WARNING] django.request: Not Found: /blogapp
+2023-09-07 17:39:10,045 [WARNING] django.request: Not Found: /blogapp/articles
+2023-09-07 17:40:02,885 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/blogapp/views.py changed, reloading.
+2023-09-07 17:40:03,559 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 17:40:04,269 [WARNING] django.request: Not Found: /blogapp/articles
+2023-09-07 17:40:05,107 [WARNING] django.request: Not Found: /blogapp/articles
+2023-09-07 17:40:40,968 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/blogapp/views.py changed, reloading.
+2023-09-07 17:40:41,817 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 17:40:55,481 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/blogapp/views.py changed, reloading.
+2023-09-07 17:40:56,169 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 17:40:57,092 [WARNING] django.request: Not Found: /blogapp/articles
+2023-09-07 17:40:58,051 [WARNING] django.request: Not Found: /blogapp/articles
+2023-09-07 17:41:22,397 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/blogapp/views.py changed, reloading.
+2023-09-07 17:41:23,043 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 17:42:23,077 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/blogapp/views.py changed, reloading.
+2023-09-07 17:42:23,846 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 17:43:43,273 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/blogapp/views.py changed, reloading.
+2023-09-07 17:43:43,850 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 17:44:09,346 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/blogapp/admin.py changed, reloading.
+2023-09-07 17:44:09,963 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 17:45:20,066 [ERROR] django.request: Internal Server Error: /en/blog/articles/1/
+Traceback (most recent call last):
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 38, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 75, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ilmi/PycharmProjects/python_django/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' appears more than once
+2023-09-07 18:02:07,891 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/blogapp/views.py changed, reloading.
+2023-09-07 18:02:08,780 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-07 18:09:25,560 [WARNING] django.request: Not Found: /favicon.ico
