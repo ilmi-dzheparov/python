@@ -6,6 +6,10 @@ from django.forms import Textarea, ModelForm
 from shopapp.models import Product, Order
 
 
+class CSVImportForm(forms.Form):
+    csv_file = forms.FileField()
+
+
 class GroupForm(ModelForm):
     class Meta:
         model = Group

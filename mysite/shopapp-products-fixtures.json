@@ -1,0 +1,170 @@
+[
+  {
+    "model": "shopapp.product",
+    "pk": 1,
+    "fields": {
+      "name": "Laptop",
+      "description": "It is smart",
+      "price": "1999.00",
+      "discount": 0,
+      "preview": "products/product_1/preview/you.png",
+      "created_at": "2023-08-06T21:37:26.202Z",
+      "created_by": 1,
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 2,
+    "fields": {
+      "name": "Desktop (new)",
+      "description": "Nesciunt sit rerum odio impedit",
+      "price": "2199.00",
+      "discount": 15,
+      "preview": "products/product_2/preview/3.png",
+      "created_at": "2023-08-06T21:37:26.202Z",
+      "created_by": 1,
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 3,
+    "fields": {
+      "name": "Smartphone",
+      "description": "Nesciunt sit rerum odio impedit unde aspernatur odit, cupiditate esse voluptas quo, sed consectetur numquam atque dignissimos minus deserunt animi, corrupti neque ratione vitae saepe aspernatur. At enim deserunt iure culpa facere sint beatae, iure tenetur eius iste similique corrupti nostrum ducimus alias totam deserunt, optio nostrum iure perferendis, libero ipsum ipsam fuga excepturi tenetur, magni exercitationem ipsa fugit facere maxime quos atque? Impedit dolore nulla provident inventore quae laudantium repellendus quam in aliquid minima.",
+      "price": "987.00",
+      "discount": 25,
+      "preview": "",
+      "created_at": "2023-08-06T21:37:26.202Z",
+      "created_by": 1,
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 5,
+    "fields": {
+      "name": "Tablet 2",
+      "description": "New Tablet",
+      "price": "300.00",
+      "discount": 5,
+      "preview": "",
+      "created_at": "2023-08-10T17:50:24.466Z",
+      "created_by": 1,
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 6,
+    "fields": {
+      "name": "Laptop 2",
+      "description": "New Laptop",
+      "price": "2333.00",
+      "discount": 12,
+      "preview": "",
+      "created_at": "2023-08-13T09:54:16.799Z",
+      "created_by": 1,
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 7,
+    "fields": {
+      "name": "Iphone",
+      "description": "New iphone 15",
+      "price": "1000.00",
+      "discount": 10,
+      "preview": "",
+      "created_at": "2023-08-15T10:15:41.620Z",
+      "created_by": 1,
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 8,
+    "fields": {
+      "name": "Samsung",
+      "description": "",
+      "price": "1089.00",
+      "discount": 5,
+      "preview": "",
+      "created_at": "2023-08-17T13:20:01.820Z",
+      "created_by": 4,
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 9,
+    "fields": {
+      "name": "Tablet 4",
+      "description": "",
+      "price": "399.00",
+      "discount": 5,
+      "preview": "products/product_<built-in function id>/preview/e1.png",
+      "created_at": "2023-08-21T17:31:24.559Z",
+      "created_by": 1,
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 10,
+    "fields": {
+      "name": "No smartphone",
+      "description": "",
+      "price": "988.00",
+      "discount": 6,
+      "preview": "products/product_<built-in function id>/preview/e2.png",
+      "created_at": "2023-08-21T18:17:27.364Z",
+      "created_by": 1,
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 11,
+    "fields": {
+      "name": "NoPhone 1",
+      "description": "very nice phone, must buy",
+      "price": "199.00",
+      "discount": 10,
+      "preview": "",
+      "created_at": "2023-09-04T12:26:51.482Z",
+      "created_by": 1,
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 12,
+    "fields": {
+      "name": "NoPhone 2",
+      "description": "very nice phone, must buy",
+      "price": "299.00",
+      "discount": 10,
+      "preview": "",
+      "created_at": "2023-09-04T12:26:51.482Z",
+      "created_by": 1,
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 13,
+    "fields": {
+      "name": "NoPhone 3",
+      "description": "very nice phone, must buy",
+      "price": "399.00",
+      "discount": 10,
+      "preview": "",
+      "created_at": "2023-09-04T12:26:51.482Z",
+      "created_by": 1,
+      "archived": false
+    }
+  }
+]
