@@ -1,3 +1,3 @@
-delivery_address,promocode,user_id
-"Moscva","SALE",1
-"Piter","PROMO",1
+delivery_address,promocode,user_id,products
+"Moscva","SALE",1,"1,2"
+"Piter","PROMO",1,"3,5,6"
