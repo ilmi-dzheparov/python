@@ -33,7 +33,7 @@ def save_csv_orders(file, encoding):
         print(row)
         print(row["products"].split(','))
         products = [
-            Product.objects.get(pk=product_id)
+            Product.objects.only("pk").get(pk=product_id)
             for product_id in row["products"].split(',')
         ]
         order = Order.objects.create(
