@@ -12,7 +12,10 @@ Orders list
     <div>
         {% for order in object_list %}
             <p><a href="{% url 'shopapp:order_detail' pk=order.pk %}">Order id: {{order.pk}}</a></p>
-            <p>Order by {% firstof order.user.first_name order.user.username%}</p>
+            <p>Order by <a href="{% url 'shopapp:user_orders' id=order.user_id %}">
+               {% firstof order.user.first_name order.user.username%}
+            </a>
+            </p>
 <!--            <p>Promocode: <code>{{order.promocode}}</code></p>-->
 <!--            <p>Delivery address: {{order.delivery_address}}</p>-->
             <p>Products in order:</p>

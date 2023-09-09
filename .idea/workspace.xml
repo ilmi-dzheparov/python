@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3722f940-e33a-4bc0-8893-622c22ed7d29" name="Changes" comment="lesson 18.6">
+    <list default="true" id="3722f940-e33a-4bc0-8893-622c22ed7d29" name="Changes" comment="lesson 18.7">
+      <change afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/user_orders_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/shopapp/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders.csv" beforeDir="false" afterPath="$PROJECT_DIR$/orders.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/myauth/templates/myauth/about-me.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/templates/myauth/about-me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/myauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/myauth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/order_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/order_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/shop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/templates/shopapp/shop-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/shopapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/shopapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/shopapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -424,7 +430,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694189838219</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="lesson 18.7">
+      <option name="closed" value="true" />
+      <created>1694192702425</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1694192702425</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -451,7 +465,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson 9.1" />
     <MESSAGE value="lesson 9.2" />
     <MESSAGE value="lesson 10.1" />
     <MESSAGE value="lesson 10.2" />
@@ -476,6 +489,7 @@
     <MESSAGE value="lesson 18.4" />
     <MESSAGE value="lesson 18.5" />
     <MESSAGE value="lesson 18.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 18.6" />
+    <MESSAGE value="lesson 18.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 18.7" />
   </component>
 </project>
