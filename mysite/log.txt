@@ -3406,3 +3406,70 @@ TypeError: 'ManyRelatedManager' object is not iterable
 2023-09-09 22:12:11,418 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2023-09-09 22:12:56,244 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/python_django/mysite/shopapp/views.py changed, reloading.
 2023-09-09 22:12:56,832 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-10-01 09:37:09,521 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-10-01 09:38:03,115 [WARNING] django.request: Not Found: /
+2023-10-01 09:38:03,124 [WARNING] django.request: Not Found: /
+2023-10-01 09:38:20,624 [WARNING] django.request: Not Found: /favicon.ico
+2023-10-01 09:38:32,205 [WARNING] django.request: Not Found: /myshop
+2023-10-01 09:38:38,305 [INFO] shopapp.views: Rendering shop index
+2023-10-01 09:38:40,288 [WARNING] django.request: Not Found: /favicon.ico
+2023-10-01 10:25:27,395 [WARNING] django.request: Not Found: /ru/shop/products/4/
+2023-10-01 14:09:35,942 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-10-01 14:09:47,662 [WARNING] django.request: Not Found: /
+2023-10-01 14:09:58,459 [ERROR] django.request: Internal Server Error: /shop/products/2/
+Traceback (most recent call last):
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: shopapp_product
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/views/generic/detail.py", line 108, in get
+    self.object = self.get_object()
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/views/generic/detail.py", line 53, in get_object
+    obj = queryset.get()
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/models/query.py", line 633, in get
+    num = len(clone)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 252, in execute
+    return self._record(super().execute, sql, params)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 177, in _record
+    return method(sql, params)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/sentry_sdk/integrations/django/__init__.py", line 616, in execute
+    return real_execute(self, sql, params)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ilmi/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: shopapp_product
+2023-10-01 14:28:02,517 [INFO] django.utils.autoreload: /home/ilmi/PycharmProjects/pythonProject/python_django/mysite/mysite/settings.py changed, reloading.

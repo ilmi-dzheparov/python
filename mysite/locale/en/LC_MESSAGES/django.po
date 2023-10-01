@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-27 10:57+0000\n"
+"POT-Creation-Date: 2023-10-01 09:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,38 +18,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: myauth/views.py:28
+#: myauth/views.py:30
 msgid "welcome hello word"
 msgstr "Welcome World!"
 
-#: myauth/views.py:33
+#: myauth/views.py:35
 #, python-brace-format
 msgid "one product"
 msgid_plural "{count} products"
 msgstr[0] "One product"
 msgstr[1] "{count} products."
 
-#: mysite/settings.py:131
+#: mysite/settings.py:209
 msgid "English"
 msgstr ""
 
-#: mysite/settings.py:132
+#: mysite/settings.py:210
 msgid "Russian"
 msgstr ""
 
-#: shopapp/models.py:17 shopapp/templates/shopapp/products-detail.html:13
+#: shopapp/models.py:24 shopapp/templates/shopapp/products-detail.html:13
 msgid "Product"
 msgstr "Product"
 
-#: shopapp/models.py:18 shopapp/templates/shopapp/products-list.html:16
+#: shopapp/models.py:25 shopapp/templates/shopapp/products-list.html:16
 msgid "Products"
 msgstr ""
 
-#: shopapp/models.py:47
+#: shopapp/models.py:60
 msgid "Order"
 msgstr ""
 
-#: shopapp/models.py:48
+#: shopapp/models.py:61
 msgid "Orders"
 msgstr ""
 

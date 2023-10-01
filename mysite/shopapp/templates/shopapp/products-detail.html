@@ -14,14 +14,14 @@
 {% endblock %}
 
 {% block body %}
-{% blocktranslate %}
-<h1>Product<strong>{{product.name}}</strong></h1>
+{% blocktrans %}
+<h1>Product<strong>{{ product.name }}</strong></h1>
 <div>
-    <div>Description: <em>{{product.description}}</em></div>
+    <div>Description: <em>{{ product.description }}</em></div>
     <br>
-    <div>Price: {{product.price}}</div>
+    <div>Price: {{ product.price }}</div>
     <br>
-{% endblocktranslate %}
+{% endblocktrans %}
     <div class="preview">
         {% if product.preview %}
         <p>{% translate 'Preview' %}:</p>
