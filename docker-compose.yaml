@@ -21,6 +21,7 @@ services:
 #        loki-url: http://localhost:3100/loki/api/v1/push
 
     volumes:
+      - .env:/app/.env
       - ./mysite/database:/app/database
 
     restart: always

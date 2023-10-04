@@ -21,6 +21,7 @@ from django.utils.translation import gettext_lazy as _
 
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
+from decouple import config
 
 sentry_sdk.init(
     dsn="https://58859cf9f1174018a46e2a15987bc537@o4505833348530176.ingest.sentry.io/4505833366290432",
@@ -49,18 +50,29 @@ DATABASE_DIR.mkdir(exist_ok=True)
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = getenv(
+# SECRET_KEY = getenv(
+#     "DJANGO_SECRET_KEY",
+#     "django-insecure-gb*am(6_#z_9jgjw)201nnhm3m9r8@7e&m5d@m@)3v4gu=u-m1",
+# )
+
+SECRET_KEY = config(
     "DJANGO_SECRET_KEY",
-    "django-insecure-gb*am(6_#z_9jgjw)201nnhm3m9r8@7e&m5d@m@)3v4gu=u-m1",
+    default="django-insecure-gb*am(6_#z_9jgjw)201nnhm3m9r8@7e&m5d@m@)3v4gu=u-m1",
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = getenv("DJANGO_DEBUG", "0") == "1"
+# DEBUG = getenv("DJANGO_DEBUG", "0") == "1"
+DEBUG = config('DJANGO_DEBUG', default=False, cast=bool)
+
+# ALLOWED_HOSTS = [
+#     "0.0.0.0",
+#     "127.0.0.1",
+# ] + getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
 
 ALLOWED_HOSTS = [
     "0.0.0.0",
     "127.0.0.1",
-] + getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
+] + config("DJANGO_ALLOWED_HOSTS", "").split(",")
 
 INTERNAL_IPS = [
     "127.0.0.1",
